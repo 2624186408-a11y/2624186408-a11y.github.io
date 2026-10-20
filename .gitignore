@@ -1,0 +1,40 @@
+node_modules/
+_site/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Local QA and review artifacts
+.honors-work/
+.honors-polish-check.cjs
+portfolio-*.png
+*.log
+.DS_Store
+Thumbs.db
+
+# Source and legacy assets not referenced by the current public site
+assets/honors/evidence/processing-manifest.json
+assets/medical/case-01.mp4
+assets/medical/case-01-poster.png
+assets/medical/case-02.mp4
+assets/medical/case-02-poster.png
+assets/medical/case-03.mp4
+assets/medical/case-03-poster.png
+assets/profile/cao-ruowen.jpg
+assets/projects/bdt/apparel-short-worn.webp
+assets/projects/bdt/crew-outdoor.webp
+assets/projects/bdt/material-sources.md
+assets/projects/cinema/
+assets/projects/research-association/closing-group.webp
+assets/projects/study/
+assets/projects/wen/
+assets/projects/wen-workspace/idea-before.png
+assets/projects/wen-workspace/idea-restored.png
+assets/projects/wen-workspace/task-linked.png
+assets/projects/wen-workspace/weekly-evidence.png
+assets/projects/wen-workspace/weekly-review.png

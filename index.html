@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="曹若雯的个人作品集：计算机专业背景，关注产品与运营，参与商业运营、医疗三维建模与个人产品探索。">
+  <title>曹若雯 Cao Ruowen — WEN.</title>
+  <link rel="icon" href="data:,">
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var openingAtHome = !location.hash || location.hash === '#home';
+      var openingReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var openingSeen = sessionStorage.getItem('wen-opening-seen') === '1';
+      if (openingAtHome && !openingReduced && !openingSeen) {
+        document.documentElement.classList.add('intro-pending');
+        window.__wenOpeningFallback = setTimeout(function () {
+          document.documentElement.classList.remove('intro-pending', 'intro-ready');
+        }, 2600);
+      }
+    } catch (_error) {}
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>.wen-decision-panel[hidden]{display:block}.wen-decision-panel+.wen-decision-panel{margin-top:32px}.wen-decision-tabs,.wen-evolution-switch{display:none}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-zh="跳到主要内容" data-en="Skip to main content">跳到主要内容</a>
+  <div class="opening" data-opening aria-hidden="true">
+    <span class="opening-panel opening-panel-top"></span>
+    <span class="opening-panel opening-panel-right"></span>
+    <span class="opening-panel opening-panel-bottom"></span>
+    <span class="opening-panel opening-panel-left"></span>
+  </div>
+  <nav class="nav" id="nav" aria-label="主导航" data-aria-zh="主导航" data-aria-en="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand" aria-label="WEN. 首页" data-aria-zh="WEN. 首页" data-aria-en="WEN. Home">WEN<span class="brand-dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="打开菜单" data-aria-zh="打开菜单" data-aria-en="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" data-zh="首页" data-en="Home">首页</a>
+        <a href="#about" data-zh="关于" data-en="About">关于</a>
+        <a href="#work" data-zh="项目" data-en="Work">项目</a>
+        <a href="#experience" data-zh="经历" data-en="Experience">经历</a>
+        <a href="#capabilities" data-zh="能力" data-en="Skills">能力</a>
+        <a href="#honors" data-zh="荣誉" data-en="Honors">荣誉</a>
+        <a href="#contact" data-zh="联系" data-en="Contact">联系</a>
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="切换至英文" data-aria-zh="切换至英文" data-aria-en="Switch to Chinese">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="section section-home" id="home">
+      <div class="container home-layout">
+        <div class="home-content">
+          <div class="home-title-row">
+            <div class="home-person"><p class="home-label" data-zh="曹若雯" data-en="Cao Ruowen">曹若雯</p><p class="home-title-en">Cao Ruowen</p></div>
+          </div>
+          <h1 class="home-title"><span data-zh="产品 · 运营" data-en="Product · Operations">产品 · 运营</span><span>BD · AI+</span></h1>
+          <p class="home-identity" data-zh="中北大学 · 计算机科学与技术 · 2027届" data-en="North University of China · Computer Science & Technology · Class of 2027">中北大学 · 计算机科学与技术 · 2027届</p>
+          <p class="tagline-sub"><span data-zh="以产品思维梳理需求，" data-en="Structure needs with product thinking.">以产品思维梳理需求，</span><br><span data-zh="用运营与合作推动落地，" data-en="Move ideas forward through operations and partnership.">用运营与合作推动落地，</span><br><span data-zh="借助 AI，把想法做出来。" data-en="Use AI to turn concepts into working outcomes.">借助 AI，把想法做出来。</span></p>
+          <div class="home-actions">
+            <a href="#work" class="btn btn-primary" data-zh="查看项目" data-en="View projects">查看项目</a>
+            <a href="#resumes" class="btn btn-secondary" data-resume-nav hidden data-zh="查看简历" data-en="View résumé">查看简历</a>
+            <a href="#contact" class="home-contact-link" data-zh="联系我 →" data-en="Contact me →">联系我 →</a>
+          </div>
+          <p class="home-signature" aria-hidden="true">Wen.</p>
+        </div>
+        <aside class="home-side">
+          <div class="profile-avatar" data-config-media="avatar" hidden></div>
+          <div class="home-note"><span data-zh="求职方向" data-en="Focus">求职方向</span><p data-zh="产品、运营与商务拓展；以技术理解支撑沟通、判断与交付。" data-en="Product, operations and business development, supported by technical understanding and delivery discipline.">产品、运营与商务拓展；以技术理解支撑沟通、判断与交付。</p></div>
+        </aside>
+        <svg class="home-editorial-arc" viewBox="0 0 210 166" aria-hidden="true" focusable="false">
+          <path d="M206 6C160 48 155 114 176 157" pathLength="1"></path>
+          <circle cx="176" cy="157" r="2.4"></circle>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <h2 class="section-title" data-zh="关于我" data-en="About">关于我</h2>
+        <div class="about-grid">
+          <div class="about-copy">
+            <div class="about-intro">
+              <h3 data-zh="从发现问题，到推动事情真正发生。" data-en="From finding the problem to making things happen.">从发现问题，到推动事情真正发生。</h3>
+              <p data-zh="我关注产品、用户与商业之间的连接。既能理解技术与需求，也愿意深入真实场景，完成从方案设计、资源协调到执行落地的全过程。" data-en="I focus on the connections between products, users and business. I can understand technology and requirements, and I am willing to work in real contexts—from solution design and resource coordination through execution and delivery.">我关注产品、用户与商业之间的连接。既能理解技术与需求，也愿意深入真实场景，完成从方案设计、资源协调到执行落地的全过程。</p>
+            </div>
+            <div class="about-details">
+              <div class="detail-group">
+                <h3 data-zh="教育背景" data-en="Education">教育背景</h3>
+                <p><strong data-zh="中北大学 · 计算机科学与技术" data-en="North University of China · Computer Science & Technology">中北大学 · 计算机科学与技术</strong><span data-zh="2023—2027（预计）｜本科在读" data-en="2023—2027 (expected) | Undergraduate">2023—2027（预计）｜本科在读</span></p>
+              </div>
+              <div class="detail-group">
+                <h3 data-zh="职业方向" data-en="Career direction">职业方向</h3>
+                <p><strong data-zh="产品管理 / 商业运营 / 业务拓展" data-en="Product management / Business operations / Business development">产品管理 / 商业运营 / 业务拓展</strong><span data-zh="关注 AI 产品及技术驱动的商业场景。" data-en="Focused on AI products and technology-driven business contexts.">关注 AI 产品及技术驱动的商业场景。</span></p>
+              </div>
+              <div class="detail-group detail-group-methods">
+                <h3 data-zh="工作方式" data-en="How I work">工作方式</h3>
+                <div class="about-methods">
+                  <div><h4 data-zh="理解真实需求" data-en="Understand real needs">理解真实需求</h4><p data-zh="从用户反馈、使用场景和项目目标出发，而不是先假设答案。" data-en="Start with user feedback, usage contexts and project goals instead of assuming the answer.">从用户反馈、使用场景和项目目标出发，而不是先假设答案。</p></div>
+                  <div><h4 data-zh="连接人和资源" data-en="Connect people and resources">连接人和资源</h4><p data-zh="让不同角色找到明确分工，把协作转化为可推进的行动。" data-en="Clarify responsibilities across roles and turn collaboration into actionable progress.">让不同角色找到明确分工，把协作转化为可推进的行动。</p></div>
+                  <div><h4 data-zh="关注实际交付" data-en="Focus on delivery">关注实际交付</h4><p data-zh="从方案设计走到落地执行，再根据反馈不断调整。" data-en="Move from solution design to execution, then keep adjusting through feedback.">从方案设计走到落地执行，再根据反馈不断调整。</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="roles-panel" data-role-explorer>
+            <div class="roles-heading">
+              <h3 data-zh="我承担的角色" data-en="Roles I take on">我承担的角色</h3>
+              <div class="roles-guidance">
+                <p class="roles-hint-desktop" data-zh="移动鼠标了解我 · 点击固定" data-en="Move to explore · Click to pin">移动鼠标了解我 · 点击固定</p>
+                <p class="roles-hint-mobile" data-zh="点击身份了解我" data-en="Tap a role to learn about me">点击身份了解我</p>
+              </div>
+            </div>
+            <div class="roles-columns" aria-label="身份与实践" data-aria-zh="身份与实践" data-aria-en="Roles and practice">
+              <div class="role-column role-column-featured">
+                <p class="role-column-label" data-zh="组织与领导力" data-en="ORGANIZATION & LEADERSHIP">组织与领导力</p>
+                <article class="role-card" data-role-id="study-lead">
+                  <button class="role-card-trigger" type="button" aria-expanded="false" aria-pressed="false" aria-controls="role-details-study-lead">
+                    <span class="role-card-topline"><span class="role-card-category" data-zh="组织管理 / LEADERSHIP" data-en="Organization / LEADERSHIP">组织管理 / LEADERSHIP</span><span class="role-card-fixed" data-zh="已固定" data-en="Pinned" aria-hidden="true">已固定</span></span>
+                    <span class="role-card-title" data-zh="新时代研习会负责人" data-en="Lead, New Era Study Association">新时代研习会负责人</span>
+                    <span class="role-card-overview"><span class="role-card-summary" data-zh="统筹多部门协作，推动大型实践与志愿项目执行。" data-en="Coordinated multiple departments and advanced large-scale practice and volunteer projects.">统筹多部门协作，推动大型实践与志愿项目执行。</span><span class="role-card-metric"><strong>6</strong><small data-zh="部门统筹" data-en="Departments">部门统筹</small></span></span>
+                  </button>
+                  <div class="role-card-details" id="role-details-study-lead" aria-hidden="true" inert>
+                    <div class="role-card-details-inner">
+                      <div class="role-detail-block"><h5 data-zh="实际工作" data-en="What I did">实际工作</h5><p data-zh="统筹 6 个部门的工作分工与任务协调，组织跨团队实践、宣讲及志愿服务活动，推动项目从任务安排走向具体执行。" data-en="Coordinated responsibilities and tasks across six departments, organized cross-team practice, outreach and volunteer activities, and moved projects from assignments into execution.">统筹 6 个部门的工作分工与任务协调，组织跨团队实践、宣讲及志愿服务活动，推动项目从任务安排走向具体执行。</p></div>
+                      <p class="role-card-result" data-zh="参与管理和组织协调 127 人团队。" data-en="Participated in the management and organizational coordination of a 127-person team.">参与管理和组织协调 127 人团队。</p>
+                      <ul class="role-tags" aria-label="对应能力" data-aria-zh="对应能力" data-aria-en="Capabilities"><li data-zh="团队管理" data-en="Team management">团队管理</li><li data-zh="跨部门协作" data-en="Cross-team collaboration">跨部门协作</li><li data-zh="项目推进" data-en="Project delivery">项目推进</li></ul>
+                    </div>
+                  </div>
+                </article>
+                <article class="role-card" data-role-id="studio">
+                  <button class="role-card-trigger" type="button" aria-expanded="false" aria-pressed="false" aria-controls="role-details-studio">
+                    <span class="role-card-topline"><span class="role-card-category" data-zh="组织与运营 / LAB OPERATIONS" data-en="Organization & operations / LAB OPERATIONS">组织与运营 / LAB OPERATIONS</span><span class="role-card-fixed" data-zh="已固定" data-en="Pinned" aria-hidden="true">已固定</span></span>
+                    <span class="role-card-title" data-zh="曹凤才创新工作室" data-en="Cao Fengcai Innovation Studio">曹凤才创新工作室</span>
+                    <span class="role-card-subtitle" data-zh="办公室主任" data-en="Office Director">办公室主任</span>
+                    <span class="role-card-overview"><span class="role-card-summary" data-zh="从公众号搭建到实验室推广，兼顾内容运营、设备维护与成员招募。" data-en="Combined content operations, equipment upkeep and member recruitment, from WeChat setup to lab promotion.">从公众号搭建到实验室推广，兼顾内容运营、设备维护与成员招募。</span></span>
+                  </button>
+                  <div class="role-card-details" id="role-details-studio" aria-hidden="true" inert>
+                    <div class="role-card-details-inner"><div class="role-detail-block"><h5 data-zh="实际工作" data-en="What I did">实际工作</h5><ul class="role-detail-list"><li data-zh="从零创建工作室微信公众号，搭建对外宣传渠道。" data-en="Built the studio's WeChat official account from scratch as an external communication channel.">从零创建工作室微信公众号，搭建对外宣传渠道。</li><li data-zh="负责实验室 3D 打印机日常维护与设备保障。" data-en="Handled routine maintenance and operational support for the lab's 3D printers.">负责实验室 3D 打印机日常维护与设备保障。</li><li data-zh="参与实验室推广和新成员招募。" data-en="Supported lab promotion and new-member recruitment.">参与实验室推广和新成员招募。</li></ul></div><ul class="role-tags" aria-label="对应能力" data-aria-zh="对应能力" data-aria-en="Capabilities"><li data-zh="内容运营" data-en="Content operations">内容运营</li><li data-zh="设备管理" data-en="Equipment management">设备管理</li><li data-zh="招募推广" data-en="Recruitment">招募推广</li></ul></div>
+                  </div>
+                </article>
+                <article class="role-card" data-role-id="student-work">
+                  <button class="role-card-trigger" type="button" aria-expanded="false" aria-pressed="false" aria-controls="role-details-student-work"><span class="role-card-topline"><span class="role-card-category" data-zh="校园服务 / STUDENT AFFAIRS" data-en="Campus service / STUDENT AFFAIRS">校园服务 / STUDENT AFFAIRS</span><span class="role-card-fixed" data-zh="已固定" data-en="Pinned" aria-hidden="true">已固定</span></span><span class="role-card-title" data-zh="新生班导员 · 班级团支书" data-en="Freshman mentor · Class Youth League secretary">新生班导员 · 班级团支书</span><span class="role-card-overview"><span class="role-card-summary" data-zh="连接学生需求与组织安排，承担日常沟通及活动组织工作。" data-en="Connected student needs with organizational arrangements through communication and event coordination.">连接学生需求与组织安排，承担日常沟通及活动组织工作。</span></span></button>
+                  <div class="role-card-details" id="role-details-student-work" aria-hidden="true" inert><div class="role-card-details-inner"><div class="role-detail-block"><h5 data-zh="实际工作" data-en="What I did">实际工作</h5><ul class="role-detail-list"><li data-zh="新生班导员：负责新生适应支持、信息沟通及相关事务协调。" data-en="Freshman mentor: supported student adaptation, information communication and related coordination.">新生班导员：负责新生适应支持、信息沟通及相关事务协调。</li><li data-zh="班级团支书：承担班级团务组织、活动安排与日常工作推进。" data-en="Class Youth League secretary: organized League affairs, arranged activities and advanced day-to-day work.">班级团支书：承担班级团务组织、活动安排与日常工作推进。</li></ul></div><ul class="role-tags" aria-label="对应能力" data-aria-zh="对应能力" data-aria-en="Capabilities"><li data-zh="沟通协调" data-en="Communication">沟通协调</li><li data-zh="组织执行" data-en="Execution">组织执行</li><li data-zh="服务意识" data-en="Service mindset">服务意识</li></ul></div></div>
+                </article>
+                <article class="role-card" data-role-id="dance">
+                  <button class="role-card-trigger" type="button" aria-expanded="false" aria-pressed="false" aria-controls="role-details-dance"><span class="role-card-topline"><span class="role-card-category" data-zh="活动运营 / CULTURE" data-en="Event operations / CULTURE">活动运营 / CULTURE</span><span class="role-card-fixed" data-zh="已固定" data-en="Pinned" aria-hidden="true">已固定</span></span><span class="role-card-title" data-zh="半导体街舞社 B.D.T" data-en="B.D.T Semiconductor Street Dance Club">半导体街舞社 B.D.T</span><span class="role-card-subtitle" data-zh="副社长" data-en="Vice President">副社长</span><span class="role-card-overview"><span class="role-card-summary" data-zh="参与大型校园演出策划、合作资源协调与活动执行。" data-en="Supported major campus performance planning, partnership resources and event execution.">参与大型校园演出策划、合作资源协调与活动执行。</span><span class="role-card-metric"><strong>700</strong><small data-zh="人规模专场" data-en="Person-scale show">人规模专场</small></span></span></button>
+                  <div class="role-card-details" id="role-details-dance" aria-hidden="true" inert><div class="role-card-details-inner"><div class="role-detail-block"><h5 data-zh="实际工作" data-en="What I did">实际工作</h5><p data-zh="参与约 700 人规模街舞专场的组织推进，与校内门店沟通合作资源，协调赞助与活动执行。" data-en="Helped organize a street-dance show for about 700 people, communicated with campus stores about partnership resources, and coordinated sponsorship and execution.">参与约 700 人规模街舞专场的组织推进，与校内门店沟通合作资源，协调赞助与活动执行。</p></div><ul class="role-tags" aria-label="对应能力" data-aria-zh="对应能力" data-aria-en="Capabilities"><li data-zh="活动策划" data-en="Event planning">活动策划</li><li data-zh="商务沟通" data-en="Business communication">商务沟通</li><li data-zh="资源整合" data-en="Resource coordination">资源整合</li></ul></div></div>
+                </article>
+              </div>
+              <div class="role-column role-column-index">
+                <p class="role-column-label" data-zh="项目与商业实践" data-en="PROJECT & BUSINESS PRACTICE">项目与商业实践</p>
+                <article class="role-card role-card-key" data-role-id="cinema">
+                  <button class="role-card-trigger" type="button" aria-expanded="false" aria-pressed="false" aria-controls="role-details-cinema"><span class="role-card-topline"><span class="role-card-category" data-zh="商业实践 / BUSINESS OPERATIONS" data-en="Business practice / BUSINESS OPERATIONS">商业实践 / BUSINESS OPERATIONS</span><span class="role-card-fixed" data-zh="已固定" data-en="Pinned" aria-hidden="true">已固定</span></span><span class="role-card-title" data-zh="晋创谷｜校园商业运营" data-en="Jinchuanggu | Campus business operations">晋创谷｜校园商业运营</span><span class="role-card-overview"><span class="role-card-summary" data-zh="从渠道合作到新业务搭建，推动商业想法进入真实运营。" data-en="Moved business ideas into real operations, from channel partnerships to new-business setup.">从渠道合作到新业务搭建，推动商业想法进入真实运营。</span><span class="role-card-metric role-card-metric-wide"><strong>0→1</strong><small data-zh="新业务搭建" data-en="Business launch">新业务搭建</small></span></span></button>
+                  <div class="role-card-details" id="role-details-cinema" aria-hidden="true" inert><div class="role-card-details-inner"><div class="role-business-list"><div><h5 data-zh="联通合作" data-en="China Unicom partnership">联通合作</h5><p data-zh="对接校园通信渠道，策划新生观影权益与资源置换合作，推动跨主体协作落地。" data-en="Coordinated campus telecom channels, planned freshman screening benefits and resource-exchange cooperation, and advanced cross-party delivery.">对接校园通信渠道，策划新生观影权益与资源置换合作，推动跨主体协作落地。</p></div><div><h5 data-zh="拼豆业务" data-en="Bead-art business">拼豆业务</h5><p data-zh="参与从零搭建体验业务，推进空间布置、运营流程、社群推广和用户服务；累计服务 1000+ 人次。" data-en="Helped build the experience business from scratch across space setup, operating flow, community promotion and user service; 1,000+ cumulative visits served.">参与从零搭建体验业务，推进空间布置、运营流程、社群推广和用户服务；累计服务 1000+ 人次。</p></div><div><h5 data-zh="晋创谷·轻自习" data-en="Jinchuanggu Light Study">晋创谷·轻自习</h5><p data-zh="主导选址、空间规划、设施配置、价格方案、用户招募与推广；前两间投入运营并约满，第三间筹备中。" data-en="Led site selection, space planning, facilities, pricing, recruitment and promotion; the first two rooms launched and filled, with a third in preparation.">主导选址、空间规划、设施配置、价格方案、用户招募与推广；前两间投入运营并约满，第三间筹备中。</p></div></div><ul class="role-tags" aria-label="对应能力" data-aria-zh="对应能力" data-aria-en="Capabilities"><li data-zh="商业策划" data-en="Business planning">商业策划</li><li data-zh="BD 合作" data-en="Partnerships">BD 合作</li><li data-zh="0→1 运营" data-en="0-to-1 operations">0→1 运营</li></ul><a class="role-project-link" href="#work-jinchuanggu" data-zh="查看相关项目" data-en="View related project">查看相关项目</a></div></div>
+                </article>
+                <article class="role-card role-card-key" data-role-id="lab-lead">
+                  <button class="role-card-trigger" type="button" aria-expanded="false" aria-pressed="false" aria-controls="role-details-lab-lead"><span class="role-card-topline"><span class="role-card-category" data-zh="技术项目 / TECH DELIVERY" data-en="Technical project / TECH DELIVERY">技术项目 / TECH DELIVERY</span><span class="role-card-fixed" data-zh="已固定" data-en="Pinned" aria-hidden="true">已固定</span></span><span class="role-card-title" data-zh="医疗建模项目组长" data-en="Medical Modeling Project Lead">医疗建模项目组长</span><span class="role-card-overview"><span class="role-card-summary" data-zh="协调医疗需求、三维建模与打印交付，推动技术成果应用于实际场景。" data-en="Coordinated medical needs, 3D modeling and print delivery to bring technical outcomes into real use.">协调医疗需求、三维建模与打印交付，推动技术成果应用于实际场景。</span><span class="role-card-metric role-card-metric-wide"><strong>300+</strong><small data-zh="累计项目实例" data-en="Cumulative project cases">累计项目实例</small></span></span></button>
+                  <div class="role-card-details" id="role-details-lab-lead" aria-hidden="true" inert><div class="role-card-details-inner"><div class="role-detail-block"><h5 data-zh="实际工作" data-en="What I did">实际工作</h5><p data-zh="参与医院医疗 CT 三维重建项目协作，组织建模、3D 打印和交付衔接，协调医疗需求与技术制作流程。" data-en="Contributed to hospital CT reconstruction projects, organizing modeling, 3D printing and delivery while coordinating medical needs with technical production.">参与医院医疗 CT 三维重建项目协作，组织建模、3D 打印和交付衔接，协调医疗需求与技术制作流程。</p></div><ul class="role-result-list"><li data-zh="项目合作累计 300+ 实例。" data-en="The project collaboration covered 300+ cumulative cases.">项目合作累计 300+ 实例。</li><li data-zh="紧急病例支持 18 小时内完成交付。" data-en="An urgent-case workflow supported delivery within 18 hours.">紧急病例支持 18 小时内完成交付。</li></ul><ul class="role-tags" aria-label="对应能力" data-aria-zh="对应能力" data-aria-en="Capabilities"><li data-zh="技术理解" data-en="Technical understanding">技术理解</li><li data-zh="流程管理" data-en="Process management">流程管理</li><li data-zh="交付协同" data-en="Delivery coordination">交付协同</li></ul><a class="role-project-link" href="#work-medical" data-zh="查看相关项目" data-en="View related project">查看相关项目</a></div></div>
+                </article>
+                <article class="role-card" data-role-id="wen">
+                  <button class="role-card-trigger" type="button" aria-expanded="false" aria-pressed="false" aria-controls="role-details-wen"><span class="role-card-topline"><span class="role-card-category" data-zh="独立产品实践 / PRODUCT DESIGN" data-en="Independent product practice / PRODUCT DESIGN">独立产品实践 / PRODUCT DESIGN</span><span class="role-card-fixed" data-zh="已固定" data-en="Pinned" aria-hidden="true">已固定</span></span><span class="role-card-title" data-zh="Wen Workspace" data-en="Wen Workspace">Wen Workspace</span><span class="role-card-subtitle" data-zh="独立产品实践" data-en="Independent product practice">独立产品实践</span><span class="role-card-overview"><span class="role-card-summary" data-zh="从真实需求出发，借助 AI 辅助开发工具持续探索产品设计与迭代。" data-en="Explored product design and iteration from real needs with AI-assisted development tools.">从真实需求出发，借助 AI 辅助开发工具持续探索产品设计与迭代。</span></span></button>
+                  <div class="role-card-details" id="role-details-wen" aria-hidden="true" inert><div class="role-card-details-inner"><div class="role-detail-block"><h5 data-zh="实际工作" data-en="What I did">实际工作</h5><p data-zh="围绕个人任务管理与日常工作场景，设计任务管理、Ideas 与 Task 转换、Weekly Reset 等功能，持续开展交互优化与版本迭代。" data-en="Designed task management, Ideas-to-Task conversion and Weekly Reset features around personal work scenarios, with ongoing interaction refinement and version iteration.">围绕个人任务管理与日常工作场景，设计任务管理、Ideas 与 Task 转换、Weekly Reset 等功能，持续开展交互优化与版本迭代。</p></div><ul class="role-tags" aria-label="对应能力" data-aria-zh="对应能力" data-aria-en="Capabilities"><li data-zh="需求分析" data-en="Requirements analysis">需求分析</li><li data-zh="产品设计" data-en="Product design">产品设计</li><li data-zh="AI 辅助实践" data-en="AI-assisted practice">AI 辅助实践</li></ul><a class="role-project-link" href="#work-wen" data-zh="查看相关项目" data-en="View related project">查看相关项目</a></div></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-heading section-heading--work">
+          <h2 class="section-title" data-zh="精选实践" data-en="Selected practice">精选实践</h2>
+          <p data-zh="先看业务范围、职责与结果；展开查看过程与图片证据。" data-en="Scan the scope, responsibilities and results first; expand for process and visual evidence.">先看业务范围、职责与结果；展开查看过程与图片证据。</p>
+          <span class="editorial-hand-note editorial-hand-note--work" aria-hidden="true">Selected Work</span>
+        </div>
+        <div class="work-list">
+          <article class="work-item work-item--wide jinchuanggu-work" id="work-jinchuanggu" data-jinchuanggu>
+            <header class="project-editorial-header" data-chapter-number="01" aria-labelledby="jinchuangguProjectTitle">
+              <div class="project-editorial-primary">
+                <p class="research-kicker">01 / BUSINESS OPERATIONS</p>
+                <h3 id="jinchuangguProjectTitle"><span data-zh="从发现需求，" data-en="From identifying a need">从发现需求，</span><span data-zh="做到业务落地。" data-en="to delivering the business.">做到业务落地。</span></h3>
+              </div>
+              <div class="project-editorial-secondary">
+                <p class="research-project-name" data-zh="晋创谷｜校园商业运营与合作" data-en="Jinchuanggu | Campus business operations & partnerships">晋创谷｜校园商业运营与合作</p>
+                <p class="project-hero-capabilities" data-zh="业务策划 · 运营执行 · 合作对接" data-en="Business planning · Operations · Partnership coordination">业务策划 · 运营执行 · 合作对接</p>
+                <p class="research-intro" data-zh="负责影院日常运营与内容推广，推进轻自习、拼豆业务落地及校园渠道合作。" data-en="Handled cinema operations and content promotion while advancing Light Study, the bead-art business and campus channel partnerships.">负责影院日常运营与内容推广，推进轻自习、拼豆业务落地及校园渠道合作。</p>
+              </div>
+            </header>
+
+            <div class="jc-case-list">
+              <section class="jc-case is-open" id="work-study" data-jc-case="study">
+                <button class="jc-case-trigger" type="button" aria-expanded="true" aria-controls="jc-panel-study">
+                  <span class="jc-case-number">01</span>
+                  <span class="jc-case-thumb" data-jc-thumb hidden></span>
+                  <span class="jc-case-heading"><strong data-zh="轻自习" data-en="Light Study">轻自习</strong><span data-zh="选址规划、设施配置、定价招募" data-en="Site planning, facilities, pricing and recruitment">选址规划、设施配置、定价招募</span></span>
+                  <span class="jc-case-result"><strong data-zh="2 间" data-en="2 rooms">2 间</strong><span data-zh="已约满" data-en="Fully booked">已约满</span></span>
+                  <span class="jc-case-toggle" aria-hidden="true"></span>
+                </button>
+                <div class="jc-case-panel" id="jc-panel-study">
+                  <div class="jc-case-panel-inner">
+                    <div class="jc-case-layout">
+                      <div class="jc-case-copy">
+                        <h4 data-zh="主导从选址到招募的落地过程" data-en="Led execution from site selection to recruitment">主导从选址到招募的落地过程</h4>
+                        <div class="jc-info-list">
+                          <div><h5 data-zh="空间落地" data-en="Space delivery">空间落地</h5><p data-zh="推进选址、空间规划及基础设施配置，落实隔板、座位名牌与使用规则。" data-en="Advanced site selection, spatial planning and basic facilities, including dividers, seat labels and usage rules.">推进选址、空间规划及基础设施配置，落实隔板、座位名牌与使用规则。</p></div>
+                          <div><h5 data-zh="定价招募" data-en="Pricing & recruitment">定价招募</h5><p data-zh="制定定价方案，开展内容宣传与用户招募；月卡由开业早鸟价200元调整为标准价300元。" data-en="Set pricing and ran content promotion and user recruitment; the monthly pass moved from a RMB 200 opening offer to the RMB 300 standard price.">制定定价方案，开展内容宣传与用户招募；月卡由开业早鸟价200元调整为标准价300元。</p></div>
+                        </div>
+                        <div class="jc-result-grid">
+                          <div><strong data-zh="2 间" data-en="2 rooms">2 间</strong><span data-zh="已约满" data-en="Fully booked">已约满</span></div>
+                          <div><strong data-zh="第 3 间" data-en="Room 3">第 3 间</strong><span data-zh="筹备中" data-en="In preparation">筹备中</span></div>
+                        </div>
+                        <p class="jc-result-date" data-zh="截至2026年10月" data-en="As of October 2026">截至2026年10月</p>
+                      </div>
+                      <div class="jc-case-media" data-jc-media="study"></div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="jc-case" data-jc-case="unicom">
+                <button class="jc-case-trigger" type="button" aria-expanded="false" aria-controls="jc-panel-unicom">
+                  <span class="jc-case-number">02</span>
+                  <span class="jc-case-thumb" data-jc-thumb hidden></span>
+                  <span class="jc-case-heading"><strong data-zh="联通合作" data-en="China Unicom partnership">联通合作</strong><span data-zh="资源互换、权益设计、兑换流程" data-en="Resource exchange, benefits and redemption flow">资源互换、权益设计、兑换流程</span></span>
+                  <span class="jc-case-result"><strong>1000+</strong><span data-zh="沉淀直接用户" data-en="Direct users retained">沉淀直接用户</span></span>
+                  <span class="jc-case-toggle" aria-hidden="true"></span>
+                </button>
+                <div class="jc-case-panel" id="jc-panel-unicom">
+                  <div class="jc-case-panel-inner">
+                    <div class="jc-case-layout">
+                      <div class="jc-case-copy">
+                        <h4 data-zh="将办卡权益与影院到店体验连接起来" data-en="Connected plan benefits with the cinema visit experience">将办卡权益与影院到店体验连接起来</h4>
+                        <div class="jc-info-list">
+                          <div><h5 data-zh="资源对接" data-en="Resource coordination">资源对接</h5><p data-zh="对接校内联通门店，以观影或拼豆权益换取新生季现场及社群宣传资源。" data-en="Coordinated with the campus China Unicom store, exchanging cinema or bead-art benefits for freshman-season on-site and community promotion resources.">对接校内联通门店，以观影或拼豆权益换取新生季现场及社群宣传资源。</p></div>
+                          <div><h5 data-zh="领取流程" data-en="Redemption flow">领取流程</h5><p data-zh="串联企业微信、公众号、小程序注册与电子票发放，明确领取步骤及前台兑换方式。" data-en="Connected WeCom, the official account, mini-program registration and e-ticket issuance into a clear pickup and front-desk redemption flow.">串联企业微信、公众号、小程序注册与电子票发放，明确领取步骤及前台兑换方式。</p></div>
+                          <div><h5 data-zh="执行跟进" data-en="Execution follow-through">执行跟进</h5><p data-zh="推进宣传物料与兑换提醒；针对凭证下发不到位的情况，协调使用办卡名单核验领取。" data-en="Advanced promotional materials and redemption reminders; when vouchers were not delivered, coordinated verification against the plan-registration list.">推进宣传物料与兑换提醒；针对凭证下发不到位的情况，协调使用办卡名单核验领取。</p></div>
+                        </div>
+                        <div class="jc-result-grid jc-result-grid-single"><div><strong>1000+</strong><span data-zh="沉淀直接用户" data-en="Direct users retained">沉淀直接用户</span></div></div>
+                      </div>
+                      <div class="jc-case-media" data-jc-media="unicom"></div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="jc-case" data-jc-case="beads">
+                <button class="jc-case-trigger" type="button" aria-expanded="false" aria-controls="jc-panel-beads">
+                  <span class="jc-case-number">03</span>
+                  <span class="jc-case-thumb" data-jc-thumb hidden></span>
+                  <span class="jc-case-heading"><strong data-zh="拼豆业务" data-en="Bead-art business">拼豆业务</strong><span data-zh="从筹备落地到持续运营" data-en="From launch preparation to ongoing operations">从筹备落地到持续运营</span></span>
+                  <span class="jc-case-result"><strong>1000+</strong><span data-zh="累计参与人次" data-en="Cumulative visits">累计参与人次</span></span>
+                  <span class="jc-case-toggle" aria-hidden="true"></span>
+                </button>
+                <div class="jc-case-panel" id="jc-panel-beads">
+                  <div class="jc-case-panel-inner">
+                    <div class="jc-case-layout">
+                      <div class="jc-case-copy">
+                        <h4 data-zh="推进从零落地与日常运营" data-en="Advanced the launch from zero into daily operations">推进从零落地与日常运营</h4>
+                        <div class="jc-info-list">
+                          <div><h5 data-zh="业务落地" data-en="Business launch">业务落地</h5><p data-zh="推进拼豆体验业务筹备、上线与推广。" data-en="Advanced preparation, launch and promotion for the bead-art experience business.">推进拼豆体验业务筹备、上线与推广。</p></div>
+                          <div><h5 data-zh="联合推广" data-en="Joint promotion">联合推广</h5><p data-zh="将拼豆体验纳入联通新生权益，增加业务触达入口。" data-en="Included the bead-art experience in China Unicom freshman benefits to create another reach channel.">将拼豆体验纳入联通新生权益，增加业务触达入口。</p></div>
+                        </div>
+                        <div class="jc-result-grid">
+                          <div><strong>1000+</strong><span data-zh="累计参与人次" data-en="Cumulative visits">累计参与人次</span></div>
+                          <div><strong>30+</strong><span data-zh="高峰单日参与人次" data-en="Peak daily visits">高峰单日参与人次</span></div>
+                        </div>
+                      </div>
+                      <div class="jc-case-media" data-jc-media="beads"></div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </article>
+
+          <article class="work-item work-item--wide kpop-work" id="work-kpop" data-kpop>
+            <header class="project-editorial-header project-editorial-header--kpop" data-chapter-number="02" aria-labelledby="kpopProjectTitle">
+              <div class="project-editorial-primary">
+                <p class="research-kicker">02 / K-POP ACTIVITIES</p>
+                <h3 id="kpopProjectTitle"><span data-zh="把各方资源，" data-en="Turn distributed resources">把各方资源，</span><span data-zh="组织成共同的行动。" data-en="into coordinated action.">组织成共同的行动。</span></h3>
+              </div>
+              <div class="project-editorial-secondary">
+                <p class="research-project-name" data-zh="K-pop 活动｜双城主办与跨地区物料交付" data-en="K-pop activities | Two-city organizing & cross-region material delivery">K-pop 活动｜双城主办与跨地区物料交付</p>
+                <p class="research-intro" data-zh="牵头跨地区主办方协作，担任太原、运城城市主办；联动周边门店与商场资源，推进线下活动、宣传物料及跨地区物料交付。" data-en="Led cross-region organizer coordination as city organizer for Taiyuan and Yuncheng, connecting nearby stores and shopping-mall resources to deliver offline events, campaign assets and cross-region materials.">牵头跨地区主办方协作，担任太原、运城城市主办；联动周边门店与商场资源，推进线下活动、宣传物料及跨地区物料交付。</p>
+              </div>
+            </header>
+
+            <div class="kp-direction-list">
+              <section class="kp-direction" data-kp-direction="activity">
+                <div class="kp-direction-row">
+                  <span class="kp-direction-letter">A</span>
+                  <div class="kp-direction-heading">
+                    <h4 data-zh="活动策划与执行" data-en="Event planning & execution">活动策划与执行</h4>
+                    <p data-zh="太原、运城城市主办 · 门店合作 · 商场联动" data-en="Taiyuan & Yuncheng city organizer · Store partnerships · Mall collaboration">太原、运城城市主办 · 门店合作 · 商场联动</p>
+                  </div>
+                  <div class="kp-row-thumbs" aria-hidden="true">
+                    <span><img class="media-focus-taiyuan-crowd" src="assets/projects/kpop/activity-taiyuan-screening.webp" width="1002" height="1500" alt="" loading="lazy" decoding="async"></span>
+                    <span><img src="assets/projects/kpop/activity-yuncheng-mall.webp" width="1350" height="1800" alt="" loading="lazy" decoding="async"></span>
+                    <span><img src="assets/projects/kpop/activity-yuncheng-screen.webp" width="1700" height="1275" alt="" loading="lazy" decoding="async"></span>
+                  </div>
+                  <button class="kp-direction-toggle" type="button" aria-expanded="false" aria-controls="kp-panel-activity" data-aria-zh="展开活动策划与执行" data-aria-en="Expand event planning and execution">
+                    <span data-kp-toggle-label data-zh="展开" data-en="Expand">展开</span><span class="kp-toggle-mark" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="kp-direction-panel" id="kp-panel-activity" aria-hidden="true" inert>
+                  <div class="kp-direction-panel-inner">
+                    <div class="kp-expanded-layout">
+                      <div class="kp-expanded-copy">
+                        <h4 data-zh="从跨地区协作到现场落地" data-en="From cross-region coordination to on-site delivery">从跨地区协作到现场落地</h4>
+                        <div class="kp-work-list">
+                          <div><h5 data-zh="双城主办" data-en="Two-city organizing">双城主办</h5><p data-zh="担任太原、运城城市主办，牵头跨地区主办方协作，推进联合活动落地。" data-en="Served as city organizer for Taiyuan and Yuncheng, leading cross-region coordination to deliver joint activities.">担任太原、运城城市主办，牵头跨地区主办方协作，推进联合活动落地。</p></div>
+                          <div><h5 data-zh="门店联动" data-en="Store collaboration">门店联动</h5><p data-zh="联动周边奶茶店、专辑店，协调合作环节与活动物料。" data-en="Coordinated nearby milk-tea and album stores, aligning partnership steps and event materials.">联动周边奶茶店、专辑店，协调合作环节与活动物料。</p></div>
+                          <div><h5 data-zh="商场联动" data-en="Mall collaboration">商场联动</h5><p data-zh="联动运城万达广场、吾悦广场等商场资源，协调宣传物料与电子屏画面制作、展示。" data-en="Connected mall resources including Yuncheng Wanda Plaza and Wuyue Plaza, coordinating campaign materials and electronic-screen visuals from production to display.">联动运城万达广场、吾悦广场等商场资源，协调宣传物料与电子屏画面制作、展示。</p></div>
+                        </div>
+                        <div class="kp-publish-links" aria-label="原发布链接" data-aria-zh="原发布链接" data-aria-en="Original publication links">
+                          <a href="https://weixin.qq.com/sph/ALt7gu9x10" target="_blank" rel="noopener noreferrer"><span data-zh="查看原发布 01" data-en="View original post 01">查看原发布 01</span><span aria-hidden="true">↗</span></a>
+                          <a href="https://weixin.qq.com/sph/ApMXKtRdv4" target="_blank" rel="noopener noreferrer"><span data-zh="查看原发布 02" data-en="View original post 02">查看原发布 02</span><span aria-hidden="true">↗</span></a>
+                        </div>
+                      </div>
+                      <div class="kp-evidence-grid kp-evidence-grid-activity">
+                        <a class="kp-evidence kp-evidence-main" href="assets/projects/kpop/activity-taiyuan-screening.webp" data-evidence-image data-kp-hero-image data-aria-zh="查看太原线下观影现场大图" data-aria-en="View the Taiyuan screening event image">
+                          <span class="kp-evidence-media"><img class="media-focus-taiyuan-crowd" src="assets/projects/kpop/activity-taiyuan-screening.webp" width="1002" height="1500" loading="lazy" decoding="async" data-alt-zh="太原线下观影活动现场与合影" data-alt-en="Taiyuan offline screening event and group photo" alt="太原线下观影活动现场与合影"></span>
+                          <span class="kp-evidence-caption"><strong data-zh="太原 · 线下观影" data-en="Taiyuan · Offline screening">太原 · 线下观影</strong><small data-zh="现场记录" data-en="On-site record">现场记录</small></span>
+                        </a>
+                        <a class="kp-evidence" href="assets/projects/kpop/activity-yuncheng-mall.webp" data-evidence-image data-aria-zh="查看运城吾悦广场联动现场大图" data-aria-en="View the Yuncheng Wuyue Plaza collaboration image">
+                          <span class="kp-evidence-media"><img src="assets/projects/kpop/activity-yuncheng-mall.webp" width="1350" height="1800" loading="lazy" decoding="async" data-alt-zh="运城吾悦广场活动布置现场" data-alt-en="Event installation at Yuncheng Wuyue Plaza" alt="运城吾悦广场活动布置现场"></span>
+                          <span class="kp-evidence-caption"><strong data-zh="运城 · 商场联动" data-en="Yuncheng · Mall collaboration">运城 · 商场联动</strong><small data-zh="现场记录" data-en="On-site record">现场记录</small></span>
+                        </a>
+                        <a class="kp-evidence" href="assets/projects/kpop/activity-yuncheng-screen.webp" data-evidence-image data-aria-zh="查看商场电子屏实际展示大图" data-aria-en="View the mall screen installation image">
+                          <span class="kp-evidence-media"><img src="assets/projects/kpop/activity-yuncheng-screen.webp" width="1700" height="1275" loading="lazy" decoding="async" data-alt-zh="商场电子屏实际展示画面" data-alt-en="Campaign visual displayed on a mall screen" alt="商场电子屏实际展示画面"></span>
+                          <span class="kp-evidence-caption"><strong data-zh="电子屏 · 实际展示" data-en="Mall screen · Live display">电子屏 · 实际展示</strong><small data-zh="现场记录" data-en="On-site record">现场记录</small></span>
+                        </a>
+                        <a class="kp-evidence kp-evidence-contain" href="assets/projects/kpop/activity-screen-draft.webp" data-evidence-image data-aria-zh="查看电子屏视觉制作稿大图" data-aria-en="View the electronic-screen artwork">
+                          <span class="kp-evidence-media"><img src="assets/projects/kpop/activity-screen-draft.webp" width="528" height="660" loading="lazy" decoding="async" data-alt-zh="商场电子屏视觉制作稿" data-alt-en="Visual artwork prepared for the mall screen" alt="商场电子屏视觉制作稿"></span>
+                          <span class="kp-evidence-caption"><strong data-zh="电子屏 · 制作稿" data-en="Mall screen · Artwork">电子屏 · 制作稿</strong><small data-zh="本方制作 · 视觉物料" data-en="Produced by our team · Visual asset">本方制作 · 视觉物料</small></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="kp-direction" data-kp-direction="materials">
+                <div class="kp-direction-row kp-direction-row-materials">
+                  <span class="kp-direction-letter">B</span>
+                  <div class="kp-direction-heading">
+                    <h4 data-zh="物料统筹与交付" data-en="Material coordination & delivery">物料统筹与交付</h4>
+                    <p data-zh="需求汇总、供应商对接、制作跟进、收款与发货" data-en="Demand collection, supplier coordination, production follow-up, payment and shipping">需求汇总、供应商对接、制作跟进、收款与发货</p>
+                  </div>
+                  <div class="kp-inline-results" aria-label="交付结果" data-aria-zh="交付结果" data-aria-en="Delivery results">
+                    <span><strong>4,800</strong><small data-zh="份 PVC 卡套 · 22 个地区" data-en="PVC card sleeves · 22 regions">份 PVC 卡套 · 22 个地区</small></span>
+                    <span><strong>12</strong><small data-zh="个定制气模 · 11 座城市" data-en="custom inflatables · 11 cities">个定制气模 · 11 座城市</small></span>
+                    <em data-zh="全部成功交付" data-en="All successfully delivered">全部成功交付</em>
+                  </div>
+                  <div class="kp-row-thumbs" aria-hidden="true">
+                    <span><img src="assets/projects/kpop/pvc-sample.webp" width="787" height="1400" alt="" loading="lazy" decoding="async"></span>
+                    <span><img src="assets/projects/kpop/inflatable-factory.webp" width="1080" height="1441" alt="" loading="lazy" decoding="async"></span>
+                    <span><img src="assets/projects/kpop/inflatable-onsite.webp" width="810" height="1080" alt="" loading="lazy" decoding="async"></span>
+                  </div>
+                  <button class="kp-direction-toggle" type="button" aria-expanded="false" aria-controls="kp-panel-materials" data-aria-zh="展开物料统筹与交付" data-aria-en="Expand material coordination and delivery">
+                    <span data-kp-toggle-label data-zh="展开" data-en="Expand">展开</span><span class="kp-toggle-mark" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="kp-direction-panel" id="kp-panel-materials" aria-hidden="true" inert>
+                  <div class="kp-direction-panel-inner">
+                    <p class="kp-process" data-zh="汇总各地需求，对接供应商，跟进制作与成品确认，完成收款及分地区发货。" data-en="Collected regional demand, coordinated suppliers, followed production and final-product confirmation, then completed payment collection and region-by-region shipping.">汇总各地需求，对接供应商，跟进制作与成品确认，完成收款及分地区发货。</p>
+
+                    <section class="kp-material-case">
+                      <div class="kp-material-copy">
+                        <span class="kp-material-number">01</span>
+                        <h4 data-zh="PVC 卡套｜批量制作与分发" data-en="PVC card sleeves | Batch production & distribution">PVC 卡套｜批量制作与分发</h4>
+                        <div class="kp-material-result"><strong data-zh="4,800 份交付" data-en="4,800 delivered">4,800 份交付</strong><span data-zh="22 个地区 · 全部成功交付" data-en="22 regions · All successfully delivered">22 个地区 · 全部成功交付</span></div>
+                        <details class="kp-delivery-details">
+                          <summary><span data-zh="查看交付明细" data-en="View delivery details">查看交付明细</span><span aria-hidden="true">＋</span></summary>
+                          <div class="kp-delivery-table-wrap"><table class="kp-delivery-table"><thead><tr><th data-zh="地区" data-en="Region">地区</th><th data-zh="数量" data-en="Quantity">数量</th></tr></thead><tbody>
+                            <tr><td data-zh="太原" data-en="Taiyuan">太原</td><td>200</td></tr><tr><td data-zh="武汉" data-en="Wuhan">武汉</td><td>935</td></tr><tr><td data-zh="深圳" data-en="Shenzhen">深圳</td><td>500</td></tr><tr><td data-zh="沈阳" data-en="Shenyang">沈阳</td><td>250</td></tr><tr><td data-zh="宁夏" data-en="Ningxia">宁夏</td><td>200</td></tr><tr><td data-zh="烟台" data-en="Yantai">烟台</td><td>90</td></tr><tr><td data-zh="郑州" data-en="Zhengzhou">郑州</td><td>450</td></tr><tr><td data-zh="珠海" data-en="Zhuhai">珠海</td><td>360</td></tr><tr><td data-zh="苏州" data-en="Suzhou">苏州</td><td>55</td></tr><tr><td data-zh="厦门" data-en="Xiamen">厦门</td><td>50</td></tr><tr><td data-zh="连云港" data-en="Lianyungang">连云港</td><td>55</td></tr><tr><td data-zh="温州" data-en="Wenzhou">温州</td><td>210</td></tr><tr><td data-zh="重庆" data-en="Chongqing">重庆</td><td>100</td></tr><tr><td data-zh="北京" data-en="Beijing">北京</td><td>230</td></tr><tr><td data-zh="泉州" data-en="Quanzhou">泉州</td><td>100</td></tr><tr><td data-zh="韶关" data-en="Shaoguan">韶关</td><td>85</td></tr><tr><td data-zh="保定" data-en="Baoding">保定</td><td>150</td></tr><tr><td data-zh="石家庄" data-en="Shijiazhuang">石家庄</td><td>320</td></tr><tr><td data-zh="乌鲁木齐" data-en="Urumqi">乌鲁木齐</td><td>150</td></tr><tr><td data-zh="淮安" data-en="Huai'an">淮安</td><td>130</td></tr><tr><td data-zh="莆田" data-en="Putian">莆田</td><td>50</td></tr><tr><td data-zh="运城" data-en="Yuncheng">运城</td><td>130</td></tr>
+                          </tbody><tfoot><tr><th data-zh="合计" data-en="Total">合计</th><td>4,800</td></tr></tfoot></table></div>
+                        </details>
+                      </div>
+                      <div class="kp-evidence-grid kp-material-evidence">
+                        <a class="kp-evidence kp-evidence-main" href="assets/projects/kpop/pvc-sample.webp" data-evidence-image data-kp-hero-image data-aria-zh="查看 PVC 卡套打样实拍大图" data-aria-en="View the PVC card sleeve sample image">
+                          <span class="kp-evidence-media"><img src="assets/projects/kpop/pvc-sample.webp" width="787" height="1400" loading="lazy" decoding="async" data-alt-zh="PVC 卡套正反面打样实拍" data-alt-en="Front and back PVC card sleeve samples" alt="PVC 卡套正反面打样实拍"></span>
+                          <span class="kp-evidence-caption"><strong data-zh="卡套打样" data-en="Card sleeve sample">卡套打样</strong><small data-zh="实物" data-en="Physical sample">实物</small></span>
+                        </a>
+                        <a class="kp-evidence kp-evidence-contain" href="assets/projects/kpop/pvc-draft-front.webp" data-evidence-image data-aria-zh="查看 PVC 卡套正面制作稿" data-aria-en="View the front artwork for the PVC card sleeve">
+                          <span class="kp-evidence-media"><img src="assets/projects/kpop/pvc-draft-front.webp" width="594" height="974" loading="lazy" decoding="async" data-alt-zh="PVC 卡套正面制作稿" data-alt-en="Front artwork for the PVC card sleeve" alt="PVC 卡套正面制作稿"></span>
+                          <span class="kp-evidence-caption"><strong data-zh="正面制作稿" data-en="Front artwork">正面制作稿</strong><small data-zh="制作稿" data-en="Artwork">制作稿</small></span>
+                        </a>
+                        <a class="kp-evidence kp-evidence-contain" href="assets/projects/kpop/pvc-draft-back.webp" data-evidence-image data-aria-zh="查看 PVC 卡套背面制作稿" data-aria-en="View the back artwork for the PVC card sleeve">
+                          <span class="kp-evidence-media"><img src="assets/projects/kpop/pvc-draft-back.webp" width="586" height="762" loading="lazy" decoding="async" data-alt-zh="PVC 卡套背面制作稿" data-alt-en="Back artwork for the PVC card sleeve" alt="PVC 卡套背面制作稿"></span>
+                          <span class="kp-evidence-caption"><strong data-zh="背面制作稿" data-en="Back artwork">背面制作稿</strong><small data-zh="制作稿" data-en="Artwork">制作稿</small></span>
+                        </a>
+                      </div>
+                    </section>
+
+                    <section class="kp-material-case">
+                      <div class="kp-material-copy">
+                        <span class="kp-material-number">02</span>
+                        <h4 data-zh="定制气模｜制作跟进与跨城交付" data-en="Custom inflatables | Production follow-up & cross-city delivery">定制气模｜制作跟进与跨城交付</h4>
+                        <div class="kp-material-result"><strong data-zh="12 个交付" data-en="12 delivered">12 个交付</strong><span data-zh="11 座城市 · 全部成功交付" data-en="11 cities · All successfully delivered">11 座城市 · 全部成功交付</span></div>
+                        <details class="kp-delivery-details">
+                          <summary><span data-zh="查看交付明细" data-en="View delivery details">查看交付明细</span><span aria-hidden="true">＋</span></summary>
+                          <div class="kp-delivery-table-wrap"><table class="kp-delivery-table"><thead><tr><th data-zh="城市" data-en="City">城市</th><th data-zh="数量" data-en="Quantity">数量</th></tr></thead><tbody>
+                            <tr><td data-zh="石家庄" data-en="Shijiazhuang">石家庄</td><td>1</td></tr><tr><td data-zh="武汉" data-en="Wuhan">武汉</td><td>1</td></tr><tr><td data-zh="乌鲁木齐" data-en="Urumqi">乌鲁木齐</td><td>1</td></tr><tr><td data-zh="沈阳" data-en="Shenyang">沈阳</td><td>1</td></tr><tr><td data-zh="泰安" data-en="Tai'an">泰安</td><td>1</td></tr><tr><td data-zh="太原" data-en="Taiyuan">太原</td><td>1</td></tr><tr><td data-zh="徐州" data-en="Xuzhou">徐州</td><td>1</td></tr><tr><td data-zh="宁波" data-en="Ningbo">宁波</td><td data-zh="2（2m、3m 各 1 个）" data-en="2 (one 2m and one 3m)">2（2m、3m 各 1 个）</td></tr><tr><td data-zh="厦门" data-en="Xiamen">厦门</td><td>1</td></tr><tr><td data-zh="深圳" data-en="Shenzhen">深圳</td><td>1</td></tr><tr><td data-zh="温州" data-en="Wenzhou">温州</td><td>1</td></tr>
+                          </tbody><tfoot><tr><th data-zh="合计" data-en="Total">合计</th><td>12</td></tr></tfoot></table></div>
+                        </details>
+                      </div>
+                      <div class="kp-evidence-grid kp-material-evidence kp-inflatable-flow">
+                        <a class="kp-evidence kp-evidence-main kp-evidence-contain" href="assets/projects/kpop/inflatable-model.webp" data-evidence-image data-aria-zh="查看定制气模开模图" data-aria-en="View the custom inflatable mold model">
+                          <span class="kp-evidence-media"><img src="assets/projects/kpop/inflatable-model.webp" width="1634" height="768" loading="lazy" decoding="async" data-alt-zh="定制气模开模图" data-alt-en="Mold model for the custom inflatable" alt="定制气模开模图"></span>
+                          <span class="kp-evidence-caption"><strong data-zh="01 · 开模图" data-en="01 · Mold model">01 · 开模图</strong><small data-zh="制作流程" data-en="Production process">制作流程</small></span>
+                        </a>
+                        <a class="kp-evidence" href="assets/projects/kpop/inflatable-factory.webp" data-evidence-image data-aria-zh="查看气模工厂成品大图" data-aria-en="View the completed inflatable at the factory">
+                          <span class="kp-evidence-media"><img src="assets/projects/kpop/inflatable-factory.webp" width="1080" height="1441" loading="lazy" decoding="async" data-alt-zh="工厂完成的定制气模成品" data-alt-en="Completed custom inflatable at the factory" alt="工厂完成的定制气模成品"></span>
+                          <span class="kp-evidence-caption"><strong data-zh="02 · 工厂成品" data-en="02 · Factory result">02 · 工厂成品</strong><small data-zh="成品确认" data-en="Final-product check">成品确认</small></span>
+                        </a>
+                        <a class="kp-evidence" href="assets/projects/kpop/inflatable-onsite.webp" data-evidence-image data-aria-zh="查看气模现场使用大图" data-aria-en="View the inflatable in use on site">
+                          <span class="kp-evidence-media"><img src="assets/projects/kpop/inflatable-onsite.webp" width="810" height="1080" loading="lazy" decoding="async" data-alt-zh="定制气模在线下现场使用" data-alt-en="Custom inflatable in use at an offline venue" alt="定制气模在线下现场使用"></span>
+                          <span class="kp-evidence-caption"><strong data-zh="03 · 现场使用" data-en="03 · On-site use">03 · 现场使用</strong><small data-zh="交付后记录" data-en="Post-delivery record">交付后记录</small></span>
+                        </a>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </article>
+
+          <article class="work-item work-item--wide medical-work" id="work-medical" data-medical-case>
+            <header class="project-editorial-header" data-chapter-number="04" aria-labelledby="medicalProjectTitle">
+              <div class="project-editorial-primary">
+                <p class="research-kicker">04 / TECHNICAL DELIVERY</p>
+                <h3 id="medicalProjectTitle"><span data-zh="把复杂的事，" data-en="Take complex work">把复杂的事，</span><span data-zh="认真做到最后。" data-en="all the way to delivery.">认真做到最后。</span></h3>
+              </div>
+              <div class="project-editorial-secondary">
+                <p class="research-project-name" data-zh="微影还形｜医疗 CT 三维重建与实体交付" data-en="Micro Image Reconstruction | Medical CT reconstruction & physical delivery">微影还形｜医疗 CT 三维重建与实体交付</p>
+                <p class="project-hero-capabilities" data-zh="项目组长 · 技术协作 · 交付推进" data-en="Project lead · Technical collaboration · Delivery coordination">项目组长 · 技术协作 · 交付推进</p>
+                <p class="research-intro" data-zh="从接收临床任务，到三维重建、模型处理与最终实物交付，我参与并推动复杂技术任务的完整落地。" data-en="From receiving clinical tasks to 3D reconstruction, model processing and final physical delivery, I helped move complex technical work through the full delivery cycle.">从接收临床任务，到三维重建、模型处理与最终实物交付，我参与并推动复杂技术任务的完整落地。</p>
+              </div>
+            </header>
+
+            <section class="medical-compact" aria-labelledby="medicalCaseTitle">
+              <aside class="medical-compact-copy">
+                <div class="medical-compact-metrics" aria-label="项目规模与交付数据" data-aria-zh="项目规模与交付数据" data-aria-en="Project scale and delivery data">
+                  <div><strong>300+</strong><span data-zh="团队累计合作实例" data-en="Team cases">团队累计合作实例</span></div>
+                  <div><strong>18h</strong><span data-zh="紧急病例交付" data-en="Urgent delivery">紧急病例交付</span></div>
+                  <div><strong>4</strong><span data-zh="份标准化文档" data-en="Standard documents">份标准化文档</span></div>
+                </div>
+                <p class="medical-metric-note" data-zh="300+ 为项目合作累计实例；18 小时为紧急病例支持场景，不代表所有项目的平均交付时间。" data-en="The 300+ figure is the project's cumulative total; 18 hours refers to an urgent-case support scenario, not an average.">300+ 为项目合作累计实例；18 小时为紧急病例支持场景，不代表所有项目的平均交付时间。</p>
+                <ul class="medical-compact-responsibilities"><li data-zh="参与医疗数据建模与处理" data-en="Medical-data modeling and processing">参与医疗数据建模与处理</li><li data-zh="承担项目组管理与任务协调" data-en="Project-group management and task coordination">承担项目组管理与任务协调</li><li data-zh="推动打印实物和模型成果交付" data-en="Printed and digital-model delivery">推动打印实物和模型成果交付</li><li data-zh="沉淀标准化操作与协作流程" data-en="Standardized operating and collaboration workflows">沉淀标准化操作与协作流程</li></ul>
+                <div class="medical-case-summary"><span class="medical-section-label" data-zh="代表性案例 / CASE 001" data-en="Representative case / CASE 001">代表性案例 / CASE 001</span><h4 id="medicalCaseTitle" data-zh="一个任务的完整落地" data-en="A task carried through to completion">一个任务的完整落地</h4><p data-zh="同一匿名案例从原始影像走到模型处理、动态核看与实体打印。" data-en="One de-identified case moved from source imaging through model processing, dynamic review and physical printing.">同一匿名案例从原始影像走到模型处理、动态核看与实体打印。</p></div>
+                <div class="medical-stage-tabs" role="tablist" aria-label="案例 001 阶段" data-aria-zh="案例 001 阶段" data-aria-en="Case 001 stages">
+                  <button type="button" role="tab" id="medical-tab-ct" aria-controls="medical-panel-ct" aria-selected="false" tabindex="-1" data-medical-stage="ct"><span>01</span><strong data-zh="CT 原始影像" data-en="Source CT">CT 原始影像</strong><small data-zh="核对影像范围与结构" data-en="Review imaging range and structure">核对影像范围与结构</small></button>
+                  <button type="button" role="tab" id="medical-tab-model" aria-controls="medical-panel-model" aria-selected="true" tabindex="0" data-medical-stage="model"><span>02</span><strong data-zh="数字模型" data-en="Digital model">数字模型</strong><small data-zh="分离并核看关键结构" data-en="Separate and review key structures">分离并核看关键结构</small></button>
+                  <button type="button" role="tab" id="medical-tab-render" aria-controls="medical-panel-render" aria-selected="false" tabindex="-1" data-medical-stage="render"><span>03</span><strong data-zh="动态演示" data-en="Motion review">动态演示</strong><small data-zh="旋转视角复核模型关系" data-en="Review relationships from rotating views">旋转视角复核模型关系</small></button>
+                  <button type="button" role="tab" id="medical-tab-print" aria-controls="medical-panel-print" aria-selected="false" tabindex="-1" data-medical-stage="print"><span>04</span><strong data-zh="打印实物" data-en="Physical print">打印实物</strong><small data-zh="形成可核验的实体交付" data-en="Create a verifiable physical delivery">形成可核验的实体交付</small></button>
+                </div>
+              </aside>
+
+              <div class="medical-compact-stage">
+                <div class="medical-stage-viewport" data-medical-viewport>
+                  <div class="medical-stage-panel" id="medical-panel-ct" role="tabpanel" aria-labelledby="medical-tab-ct" data-medical-panel="ct" hidden>
+                    <button class="medical-stage-media" type="button" data-medical-zoom="assets/medical/case-001/ct-source.png" data-aria-zh="查看匿名化 CT 原始影像大图" data-aria-en="View de-identified source CT image full size" aria-label="查看匿名化 CT 原始影像大图"><img src="assets/medical/case-001/ct-source.png" width="1312" height="1027" alt="案例 001 匿名化 CT 原始影像" data-alt-zh="案例 001 匿名化 CT 原始影像" data-alt-en="De-identified source CT imaging for Case 001"></button>
+                  </div>
+                  <div class="medical-stage-panel is-active" id="medical-panel-model" role="tabpanel" aria-labelledby="medical-tab-model" data-medical-panel="model">
+                    <div class="medical-model-pair">
+                      <button class="medical-stage-media" type="button" data-medical-zoom="assets/medical/case-001/model-front.png" aria-label="查看数字模型正面视图大图"><img src="assets/medical/case-001/model-front.png" width="1666" height="1056" alt="案例 001 数字模型正面视图" data-alt-zh="案例 001 数字模型正面视图" data-alt-en="Front view of the Case 001 digital model"></button>
+                      <button class="medical-stage-media" type="button" data-medical-zoom="assets/medical/case-001/model-back.png" aria-label="查看数字模型背面视图大图"><img src="assets/medical/case-001/model-back.png" width="1477" height="1189" alt="案例 001 数字模型背面视图" data-alt-zh="案例 001 数字模型背面视图" data-alt-en="Rear view of the Case 001 digital model"></button>
+                    </div>
+                  </div>
+                  <div class="medical-stage-panel" id="medical-panel-render" role="tabpanel" aria-labelledby="medical-tab-render" data-medical-panel="render" hidden>
+                    <div class="medical-stage-video"><video controls playsinline preload="metadata" poster="assets/medical/case-001/model-front.png" aria-label="案例 001 三维模型旋转渲染" data-aria-zh="案例 001 三维模型旋转渲染" data-aria-en="Case 001 rotating 3D model render"><source src="assets/medical/case-001/render.mp4" type="video/mp4"></video></div>
+                  </div>
+                  <div class="medical-stage-panel" id="medical-panel-print" role="tabpanel" aria-labelledby="medical-tab-print" data-medical-panel="print" hidden>
+                    <button class="medical-stage-media medical-stage-media-portrait" type="button" data-medical-zoom="assets/medical/case-001/printed-model.jpg" aria-label="查看实体打印模型大图"><img loading="lazy" src="assets/medical/case-001/printed-model.jpg" width="960" height="1280" alt="案例 001 实体打印模型" data-alt-zh="案例 001 实体打印模型" data-alt-en="Physical printed model for Case 001"></button>
+                  </div>
+                </div>
+                <p class="medical-privacy" data-zh="隐私说明：公开页面仅使用已去除姓名、病历号等识别信息的展示素材。" data-en="Privacy note: public-facing materials omit names, record numbers and other identifying details.">隐私说明：公开页面仅使用已去除姓名、病历号等识别信息的展示素材。</p>
+              </div>
+            </section>
+
+            <details class="medical-work-note">
+              <summary><span><small data-zh="幕后工作笔记 / TROUBLESHOOTING" data-en="Behind-the-scenes note / TROUBLESHOOTING">幕后工作笔记 / TROUBLESHOOTING</small><strong data-zh="换了零件，为什么问题还在？" data-en="Why did the problem remain after replacing the part?">换了零件，为什么问题还在？</strong><em data-zh="一次从零件更换继续追到结构干涉的排障过程。" data-en="A troubleshooting process that continued from part replacement to structural interference.">一次从零件更换继续追到结构干涉的排障过程。</em></span><b data-zh="查看详情" data-en="View details">查看详情</b></summary>
+              <div class="medical-note-content">
+                <ol>
+                  <li><span>01</span><p data-zh="拓竹 H2D 3D 打印机出现堵头及组件损坏。" data-en="A Bambu Lab H2D 3D printer developed a nozzle blockage and component damage.">拓竹 H2D 3D 打印机出现堵头及组件损坏。</p></li>
+                  <li><span>02</span><p data-zh="参考官方资料并与售后沟通，更换热端组件后，故障依然复现。" data-en="After consulting official materials and support, the hotend was replaced, but the fault reappeared.">参考官方资料并与售后沟通，更换热端组件后，故障依然复现。</p></li>
+                  <li><span>03</span><p data-zh="继续观察设备结构、比对以往照片，发现废料盒安装位置过高，与左喷嘴发生干涉。" data-en="Further inspection and comparison with earlier photos revealed that the waste chute was mounted too high and interfered with the left nozzle.">继续观察设备结构、比对以往照片，发现废料盒安装位置过高，与左喷嘴发生干涉。</p></li>
+                  <li><span>04</span><p data-zh="重新安装废料盒后，此前的异常消失。" data-en="After reinstalling the waste chute, the previous abnormal behavior disappeared.">重新安装废料盒后，此前的异常消失。</p></li>
+                </ol>
+                <p class="medical-note-conclusion" data-zh="这次排障没有停在“换过零件”这一步，而是继续追踪复现条件，直到找到真正影响设备运行的结构原因。" data-en="The troubleshooting did not stop at replacing a part; it continued by tracing the reproduction conditions until the structural cause affecting operation was identified.">这次排障没有停在“换过零件”这一步，而是继续追踪复现条件，直到找到真正影响设备运行的结构原因。</p>
+              </div>
+            </details>
+          </article>
+
+          <article class="work-item work-item--wide wen-workspace" id="work-wen" data-wen-workspace>
+            <section class="research-hero project-showcase-hero project-showcase-hero--wen" aria-labelledby="wenProjectTitle">
+              <div class="research-hero-copy">
+                <p class="research-kicker">03 / PRODUCT IN PRACTICE</p>
+                <h3 id="wenProjectTitle"><span data-zh="让产品解决问题，" data-en="Let a product solve problems">让产品解决问题，</span><span data-zh="也贴近使用它的人。" data-en="and stay close to the person using it.">也贴近使用它的人。</span></h3>
+                <p class="research-project-name" data-zh="Wen Workspace｜个人效率工具 · 个性化体验设计" data-en="Wen Workspace | Personal productivity · Personalized experience design">Wen Workspace｜个人效率工具 · 个性化体验设计</p>
+                <p class="research-intro" data-zh="一个源于个人多项目管理需求、持续迭代中的效率工作台。我提出需求、定义场景、评估交互，并通过 ChatGPT/Codex 辅助实现与验证。" data-en="An evolving productivity workspace born from my own multi-project needs. I define needs and scenarios, evaluate interactions, and use ChatGPT/Codex to assist implementation and validation.">一个源于个人多项目管理需求、持续迭代中的效率工作台。我提出需求、定义场景、评估交互，并通过 ChatGPT/Codex 辅助实现与验证。</p>
+              </div>
+
+              <figure class="research-hero-figure">
+                <button class="research-image-link" type="button" data-wen-zoom="assets/projects/wen-workspace/hero-ai-workspace.png" data-aria-zh="查看 Wen Workspace AI 个人效率工作台完整图片" data-aria-en="View the full Wen Workspace AI personal productivity workspace image" aria-label="查看 Wen Workspace AI 个人效率工作台完整图片">
+                  <img src="assets/projects/wen-workspace/hero-ai-workspace.png" width="1908" height="824" alt="Wen Workspace AI 个人效率工作台项目概览，包含首页与专注界面" data-alt-zh="Wen Workspace AI 个人效率工作台项目概览，包含首页与专注界面" data-alt-en="Wen Workspace AI personal productivity workspace overview with home and focus views">
+                </button>
+              </figure>
+            </section>
+
+            <section class="wen-compact" aria-labelledby="wenDecisionTitle">
+              <div class="wen-compact-media" id="wenCompactMedia" role="tabpanel" aria-labelledby="wen-choice-manage" data-wen-media-stage>
+                <button type="button" class="wen-compact-media-button" data-wen-zoom="assets/projects/wen-workspace/home-current.png" aria-label="查看 Wen Workspace 当前首页完整截图">
+                  <img src="assets/projects/wen-workspace/home-current.png" width="1440" height="1358" alt="Wen Workspace 当前首页与多项目任务概览" data-alt-zh="Wen Workspace 当前首页与多项目任务概览" data-alt-en="Current Wen Workspace home and multi-project overview">
+                </button>
+                <p class="wen-compact-caption"><strong data-wen-media-title data-zh="管理多项目 · 当前首页" data-en="Multi-project management · Current home">管理多项目 · 当前首页</strong><span data-wen-media-caption data-zh="用项目、今日重点与进行中任务形成可继续阅读的工作入口。" data-en="Projects, today's focus and active tasks form one readable entry point.">用项目、今日重点与进行中任务形成可继续阅读的工作入口。</span></p>
+              </div>
+
+              <aside class="wen-compact-copy">
+                <h4 id="wenDecisionTitle" data-zh="三个核心设计选择" data-en="Three core design choices">三个核心设计选择</h4>
+                <div class="wen-compact-decisions" role="tablist" aria-label="核心设计选择" data-aria-zh="核心设计选择" data-aria-en="Core design choices">
+                  <button type="button" role="tab" id="wen-choice-manage" aria-controls="wenCompactMedia" aria-selected="true" data-wen-choice="manage" data-src="assets/projects/wen-workspace/home-current.png" data-width="1440" data-height="1358" data-title-zh="管理多项目 · 当前首页" data-title-en="Multi-project management · Current home" data-caption-zh="用项目、今日重点与进行中任务形成可继续阅读的工作入口。" data-caption-en="Projects, today's focus and active tasks form one readable entry point." data-alt-zh="Wen Workspace 当前首页与多项目任务概览" data-alt-en="Current Wen Workspace home and multi-project overview"><span>01</span><strong data-zh="管理多项目" data-en="Manage multiple projects">管理多项目</strong><em data-zh="先组织项目与下一步，不把首页做成功能清单。" data-en="Organize projects and next actions instead of turning home into a feature list.">先组织项目与下一步，不把首页做成功能清单。</em><small data-zh="首页把重要事项、今日重点和项目进展放在同一阅读路径中。" data-en="Home places important items, today's focus and project progress in one reading path.">首页把重要事项、今日重点和项目进展放在同一阅读路径中。</small></button>
+                  <button type="button" role="tab" id="wen-choice-attention" aria-controls="wenCompactMedia" aria-selected="false" tabindex="-1" data-wen-choice="attention" data-src="assets/projects/wen-workspace/home-important-detail.png" data-width="1160" data-height="348" data-title-zh="减少遗漏 · 防漏提醒" data-title-en="Reduce omissions · Attention cues" data-caption-zh="让待确认、临近截止与需要处理的事项先被看见。" data-caption-en="Surface unconfirmed, due-soon and actionable items first." data-alt-zh="Wen Workspace 防漏提醒与重要事项优先级" data-alt-en="Wen Workspace attention cues and important-item priority"><span>02</span><strong data-zh="减少遗漏" data-en="Reduce omissions">减少遗漏</strong><em data-zh="让需要关注的状态先出现，再决定今天做什么。" data-en="Surface attention states before deciding what to do today.">让需要关注的状态先出现，再决定今天做什么。</em><small data-zh="当前界面优先暴露待确认与重要事项，未接入的服务不写成已上线。" data-en="The current interface prioritizes pending and important items; unconnected services are not described as live.">当前界面优先暴露待确认与重要事项，未接入的服务不写成已上线。</small></button>
+                  <button type="button" role="tab" id="wen-choice-personal" aria-controls="wenCompactMedia" aria-selected="false" tabindex="-1" data-wen-choice="personal" data-src="assets/projects/wen-workspace/carat-room.png" data-width="1440" data-height="2104" data-title-zh="贴近使用者 · 陪伴角色" data-title-en="Stay personal · Companion roles" data-caption-zh="用已实现的 MINITEEN 角色与状态反馈承载个性化体验。" data-caption-en="Implemented MINITEEN roles and state feedback support a personalized experience." data-alt-zh="Wen Workspace CARAT ROOM 陪伴角色选择与状态展示" data-alt-en="Wen Workspace CARAT ROOM companion selection and states"><span>03</span><strong data-zh="贴近使用者" data-en="Stay close to the user">贴近使用者</strong><em data-zh="把个人兴趣转成克制、可选择的陪伴反馈。" data-en="Turn personal interests into restrained, optional companion feedback.">把个人兴趣转成克制、可选择的陪伴反馈。</em><small data-zh="MINITEEN 角色选择与状态反馈已有真实界面支持，不延伸为未验证的市场结论。" data-en="MINITEEN selection and state feedback are supported by real UI, without claiming an unvalidated market need.">MINITEEN 角色选择与状态反馈已有真实界面支持，不延伸为未验证的市场结论。</small></button>
+                </div>
+                <div class="wen-compact-status"><p><strong data-zh="已实现" data-en="Implemented">已实现</strong><span data-zh="本地任务、重要事项、专注记录、每周复盘与想法—任务可逆关联。" data-en="Local tasks, important items, focus records, weekly reviews and reversible Idea–Task links.">本地任务、重要事项、专注记录、每周复盘与想法—任务可逆关联。</span></p><p><strong data-zh="继续迭代" data-en="In progress">继续迭代</strong><span data-zh="已完成 V0.4.1 阶段；真实 AI 服务、外部日历与在线部署仍待接入或验收。" data-en="V0.4.1 is complete; live AI, external calendar and online deployment remain to be integrated or verified.">已完成 V0.4.1 阶段；真实 AI 服务、外部日历与在线部署仍待接入或验收。</span></p></div>
+              </aside>
+            </section>
+
+            <div class="wen-compact-details-row">
+              <details class="wen-compact-details">
+                <summary><span><small>ITERATION RECORD</small><strong data-zh="查看 V0.1 与当前版本对比" data-en="Compare V0.1 with the current version">查看 V0.1 与当前版本对比</strong></span><b aria-hidden="true">＋</b></summary>
+                <div class="wen-version-compare">
+                  <figure><button type="button" data-wen-zoom="assets/projects/wen-workspace/home-v01.png" aria-label="查看 Wen Workspace V0.1 首页"><img loading="lazy" src="assets/projects/wen-workspace/home-v01.png" width="1440" height="1100" alt="Wen Workspace V0.1 首页"></button><figcaption><strong>V0.1</strong><span data-zh="建立项目与任务的基本视图，使用路径仍以功能模块为主。" data-en="Established basic project and task views, still organized mainly by feature modules.">建立项目与任务的基本视图，使用路径仍以功能模块为主。</span></figcaption></figure>
+                  <figure><button type="button" data-wen-zoom="assets/projects/wen-workspace/home-current.png" aria-label="查看 Wen Workspace 当前首页"><img loading="lazy" src="assets/projects/wen-workspace/home-current.png" width="1440" height="1358" alt="Wen Workspace 当前首页"></button><figcaption><strong data-zh="当前版本" data-en="Current">当前版本</strong><span data-zh="围绕真实工作流重组信息，持续验证和调整。" data-en="Reorganized around real workflows and continuously refined through use.">围绕真实工作流重组信息，持续验证和调整。</span></figcaption></figure>
+                </div>
+              </details>
+              <details class="wen-compact-details">
+                <summary><span><small>HOW I BUILT IT</small><strong data-zh="查看实现方法与职责边界" data-en="View method and role boundaries">查看实现方法与职责边界</strong></span><b aria-hidden="true">＋</b></summary>
+                <div class="wen-method-compact"><p data-zh="从发现需求、设计交互，到借助 GPT 与 Codex 协作实现，再通过实际使用不断验证和调整。" data-en="From finding the need and designing interactions, to implementation with GPT and Codex, then validation through real use.">从发现需求、设计交互，到借助 GPT 与 Codex 协作实现，再通过实际使用不断验证和调整。</p><ol><li data-zh="发现问题" data-en="Find the problem">发现问题</li><li data-zh="设计方案" data-en="Design the solution">设计方案</li><li data-zh="AI 协作实现" data-en="Build with AI">AI 协作实现</li><li data-zh="使用验证" data-en="Validate in use">使用验证</li></ol><p data-zh="我的主要工作是提出需求、定义场景、评估交互，并通过 ChatGPT/Codex 辅助实现；不表述为独立完成全部技术开发。" data-en="My primary work was defining needs and scenarios, evaluating interactions, and using ChatGPT/Codex to assist implementation—not claiming independent authorship of all technical development.">我的主要工作是提出需求、定义场景、评估交互，并通过 ChatGPT/Codex 辅助实现；不表述为独立完成全部技术开发。</p></div>
+              </details>
+            </div>
+          </article>
+
+          <article class="work-item work-item--wide research-association" id="work-research">
+            <section class="research-hero" aria-labelledby="researchTitle">
+              <div class="research-hero-copy">
+                <p class="research-kicker">05 / LEADERSHIP IN PRACTICE</p>
+                <h3 id="researchTitle"><span data-zh="从做好一件事，" data-en="From doing one thing well">从做好一件事，</span><span data-zh="到带动一群人做好。" data-en="to helping a whole team do it well.">到带动一群人做好。</span></h3>
+                <p class="research-project-name" data-zh="新时代研习会｜团队管理 · 组织统筹 · 项目推进" data-en="New Era Study Association | Team management · Organizational coordination · Project delivery">新时代研习会｜团队管理 · 组织统筹 · 项目推进</p>
+                <p class="research-intro" data-zh="我负责推进团队协作、部门分工与项目落地，让一支由多人、多组别构成的学生团队持续运转，并共同完成实践活动、项目申报与成果交付。" data-en="I coordinated teamwork, group responsibilities and project delivery, keeping a multi-group student organization moving and guiding shared work across field practice, project applications and final outcomes.">我负责推进团队协作、部门分工与项目落地，让一支由多人、多组别构成的学生团队持续运转，并共同完成实践活动、项目申报与成果交付。</p>
+              </div>
+
+              <figure class="research-hero-figure">
+                <a class="research-image-link" href="assets/projects/research-association/team-banner.webp" data-evidence-image data-aria-zh="查看团队与服务对象合影原图" data-aria-en="View the full team and participants photo">
+                  <img src="assets/projects/research-association/team-banner.webp" width="1920" height="1080" alt="忻州实践中研习会团队与服务对象在横幅前合影" data-alt-zh="忻州实践中研习会团队与服务对象在横幅前合影" data-alt-en="Study Association team and participants gathered behind a banner during the Xinzhou field program">
+                </a>
+                <figcaption><span data-zh="团队现场" data-en="Team in action">团队现场</span><span data-zh="2025 忻州实践 · 团队与服务对象合影" data-en="2025 Xinzhou field program · Team and participants">2025 忻州实践 · 团队与服务对象合影</span></figcaption>
+              </figure>
+
+              <dl class="research-metrics" aria-label="团队规模与任期" data-aria-zh="团队规模与任期" data-aria-en="Team scale and term">
+                <div><dt>127 <small data-zh="人" data-en="people">人</small></dt><dd data-zh="任期内骨干成员规模" data-en="Core members during the term">任期内骨干成员规模</dd></div>
+                <div><dt>6 <small data-zh="个工作组" data-en="working groups">个工作组</small></dt><dd data-zh="持续分工、协同推进" data-en="Ongoing division and coordination">持续分工、协同推进</dd></div>
+                <div><dt>2025–2026</dt><dd data-zh="负责人任期阶段" data-en="Leadership term">负责人任期阶段</dd></div>
+              </dl>
+            </section>
+
+            <section class="research-practice" aria-label="组织管理与项目交付" data-aria-zh="组织管理与项目交付" data-aria-en="Organization and project delivery">
+              <article class="research-practice-block">
+                <div class="research-practice-copy">
+                  <p class="research-block-label">HOW I LED</p>
+                  <h4 data-zh="让分工持续运转，而不是停在名单上。" data-en="Keep responsibilities moving, not just listed on paper.">让分工持续运转，而不是停在名单上。</h4>
+                  <p data-zh="围绕任务分工、跨组协同和节点跟进组织日常运转，在具体工作中对齐负责人、时间与交付要求，让多条工作线持续向前。" data-en="I organized daily operations around task ownership, cross-group coordination and milestone follow-up, aligning people, timing and delivery expectations so multiple workstreams could keep moving.">围绕任务分工、跨组协同和节点跟进组织日常运转，在具体工作中对齐负责人、时间与交付要求，让多条工作线持续向前。</p>
+                  <ul aria-label="组织管理关键词" data-aria-zh="组织管理关键词" data-aria-en="Leadership keywords"><li data-zh="任务分工" data-en="Task ownership">任务分工</li><li data-zh="协同推进" data-en="Coordination">协同推进</li><li data-zh="组织运转" data-en="Operations">组织运转</li><li data-zh="项目跟进" data-en="Follow-up">项目跟进</li></ul>
+                </div>
+                <figure>
+                  <a class="research-image-link" href="assets/projects/research-association/team-debrief.webp" data-evidence-image data-aria-zh="查看团队复盘现场原图" data-aria-en="View the full team debrief photo">
+                    <img src="assets/projects/research-association/team-debrief.webp" loading="lazy" width="1600" height="900" alt="研习会成员围坐进行团队复盘与任务讨论" data-alt-zh="研习会成员围坐进行团队复盘与任务讨论" data-alt-en="Study Association members gathered for a team debrief and task discussion">
+                  </a>
+                  <figcaption data-zh="围圈复盘 · 在真实协作中对齐任务与下一步" data-en="Team debrief · Aligning tasks and next steps through real collaboration">围圈复盘 · 在真实协作中对齐任务与下一步</figcaption>
+                </figure>
+              </article>
+
+              <article class="research-practice-block">
+                <div class="research-practice-copy">
+                  <p class="research-block-label">HOW WE DELIVERED</p>
+                  <h4 data-zh="把团队协作带到真实场景。" data-en="Bring teamwork into real-world delivery.">把团队协作带到真实场景。</h4>
+                  <p data-zh="团队协作最终落在项目申报与答辩、志愿实践和现场执行中。我既参与具体工作，也持续跟进信息、人员与交付节点的衔接。" data-en="The collaboration ultimately showed up in project applications, presentations, volunteer practice and on-site execution. I joined the hands-on work while continuing to coordinate information, people and delivery milestones.">团队协作最终落在项目申报与答辩、志愿实践和现场执行中。我既参与具体工作，也持续跟进信息、人员与交付节点的衔接。</p>
+                  <ul aria-label="项目交付关键词" data-aria-zh="项目交付关键词" data-aria-en="Delivery keywords"><li data-zh="项目推进" data-en="Project delivery">项目推进</li><li data-zh="实践活动" data-en="Field practice">实践活动</li><li data-zh="申报答辩" data-en="Applications">申报答辩</li><li data-zh="落地执行" data-en="Execution">落地执行</li></ul>
+                </div>
+                <figure>
+                  <a class="research-image-link" href="assets/projects/research-association/classroom-delivery.webp" data-evidence-image data-aria-zh="查看支教课堂现场原图" data-aria-en="View the full classroom practice photo">
+                    <img src="assets/projects/research-association/classroom-delivery.webp" loading="lazy" width="1600" height="900" alt="志愿者在忻州实践课堂中与学生互动并推进教学活动" data-alt-zh="志愿者在忻州实践课堂中与学生互动并推进教学活动" data-alt-en="Volunteers interacting with students during a classroom session in Xinzhou">
+                  </a>
+                  <figcaption data-zh="课堂实践 · 从组织安排走向真实现场" data-en="Classroom practice · From coordination to real-world delivery">课堂实践 · 从组织安排走向真实现场</figcaption>
+                </figure>
+              </article>
+            </section>
+
+            <section class="research-outcomes" aria-labelledby="researchOutcomeTitle">
+              <div class="research-outcomes-heading">
+                <p class="research-block-label">WHAT REMAINED</p>
+                <h4 id="researchOutcomeTitle" data-zh="留下成果，也留下可继续运转的协作方式。" data-en="Outcomes remained—and so did a way of working together.">留下成果，也留下可继续运转的协作方式。</h4>
+              </div>
+              <div class="research-outcome-list">
+                <div><span>01</span><h5 data-zh="项目申报与答辩" data-en="Applications & presentations">项目申报与答辩</h5><p data-zh="围绕分工和节点组织材料与表达，让团队成果被完整呈现。" data-en="Organizing materials and communication around ownership and milestones so team outcomes could be presented clearly.">围绕分工和节点组织材料与表达，让团队成果被完整呈现。</p></div>
+                <div><span>02</span><h5 data-zh="志愿实践" data-en="Volunteer practice">志愿实践</h5><p data-zh="把组织协作带到课堂与实践现场，完成真实服务和团队交付。" data-en="Taking coordinated work into classrooms and field settings to complete real service delivery together.">把组织协作带到课堂与实践现场，完成真实服务和团队交付。</p></div>
+                <div><span>03</span><h5 data-zh="团队成果与组织影响" data-en="Team outcomes & continuity">团队成果与组织影响</h5><p data-zh="成果归于共同参与的团队；持续跟进与复盘，让协作经验能够被下一次行动复用。" data-en="Outcomes belong to the team; sustained follow-up and review made the working method reusable for the next action.">成果归于共同参与的团队；持续跟进与复盘，让协作经验能够被下一次行动复用。</p></div>
+              </div>
+            </section>
+          </article>
+
+          <article class="work-item work-item--wide bdt-work" id="work-bdt" data-bdt>
+            <header class="project-editorial-header project-editorial-header--bdt" data-chapter-number="06" aria-labelledby="bdtProjectTitle">
+              <div class="project-editorial-primary">
+                <p class="research-kicker">06 / EVENT OPERATIONS</p>
+                <h3 id="bdtProjectTitle"><span data-zh="感受节拍，" data-en="Feel the beat.">感受节拍，</span><span data-zh="感受生命。" data-en="Feel alive.">感受生命。</span></h3>
+              </div>
+              <div class="project-editorial-secondary">
+                <p class="research-project-name" data-zh="半导体街舞社｜中北大学 B.D.T｜副社长" data-en="B.D.T Crew | North University of China | Vice President">半导体街舞社｜中北大学 B.D.T｜副社长</p>
+                <div class="project-editorial-meta">
+                  <p class="project-hero-capabilities" data-zh="活动统筹 · 商务合作 · 资源协调" data-en="Event coordination · Partnerships · Resource alignment">活动统筹 · 商务合作 · 资源协调</p>
+                  <time datetime="2025-09/2026-07">2025.09—2026.07</time>
+                </div>
+                <p class="research-intro" data-zh="担任副社长，推进年度专场、商务合作与社服定制，协调校内外演出及日常训练。" data-en="As vice president, I advanced the annual showcase, business partnerships and team apparel production while coordinating campus and community performances and regular training.">担任副社长，推进年度专场、商务合作与社服定制，协调校内外演出及日常训练。</p>
+              </div>
+            </header>
+
+            <section class="bdt-showcase" aria-labelledby="bdtShowcaseTitle">
+              <div class="bdt-showcase-visuals">
+                <figure class="bdt-main-figure">
+                  <button type="button" class="research-image-link" data-bdt-zoom="assets/projects/bdt/annual-show-group.webp" aria-label="查看 B.D.T 年度专场演员合照大图" data-aria-zh="查看 B.D.T 年度专场演员合照大图" data-aria-en="View the full B.D.T annual showcase cast photo">
+                    <img src="assets/projects/bdt/annual-show-group.webp" width="2400" height="1600" alt="B.D.T 年度专场结束后的演员舞台合照" data-alt-zh="B.D.T 年度专场结束后的演员舞台合照" data-alt-en="Cast gathered on stage after the B.D.T annual showcase">
+                  </button>
+                  <figcaption><span data-zh="年度专场 · 演员合照" data-en="Annual showcase · Cast photo">年度专场 · 演员合照</span><span data-zh="团队共同完成" data-en="Delivered by the team">团队共同完成</span></figcaption>
+                </figure>
+
+                <div class="bdt-support-strip" aria-label="专场辅助材料" data-aria-zh="专场辅助材料" data-aria-en="Supporting showcase materials">
+                  <figure>
+                    <button type="button" data-bdt-zoom="assets/projects/bdt/stage-preparation.webp" aria-label="查看演出前舞台准备照片" data-aria-zh="查看演出前舞台准备照片" data-aria-en="View the pre-show stage preparation photo">
+                      <img loading="lazy" src="assets/projects/bdt/stage-preparation.webp" width="1440" height="960" alt="演出前的空场舞台、灯光与 B.D.T 屏幕" data-alt-zh="演出前的空场舞台、灯光与 B.D.T 屏幕" data-alt-en="Empty stage, lighting and B.D.T screen before the show">
+                    </button>
+                    <figcaption data-zh="舞台准备 · 灯光与现场空间" data-en="Stage preparation · Lighting and venue">舞台准备 · 灯光与现场空间</figcaption>
+                  </figure>
+                  <figure class="bdt-support-ticket">
+                    <button type="button" data-bdt-zoom="assets/projects/bdt/golden-zone-ticket.webp" aria-label="查看 GOLDEN ZONE 专场票券大图" data-aria-zh="查看 GOLDEN ZONE 专场票券大图" data-aria-en="View the full GOLDEN ZONE showcase ticket photo">
+                      <img loading="lazy" src="assets/projects/bdt/golden-zone-ticket-detail.webp" width="1800" height="1200" alt="GOLDEN ZONE 年度专场实体票券局部，展示深蓝票面与 B.D.T. CREW 标志" data-alt-zh="GOLDEN ZONE 年度专场实体票券局部，展示深蓝票面与 B.D.T. CREW 标志" data-alt-en="Close-up of dark-blue GOLDEN ZONE tickets with B.D.T. CREW marks">
+                    </button>
+                    <figcaption data-zh="专场票券 · 实体物料落地" data-en="Showcase tickets · Physical material delivery">专场票券 · 实体物料落地</figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="bdt-showcase-copy">
+                <p class="research-block-label">ANNUAL SHOWCASE</p>
+                <h4 id="bdtShowcaseTitle" data-zh="把一次专场，推进到真实现场。" data-en="Carry an annual showcase into the real venue.">把一次专场，推进到真实现场。</h4>
+                <div class="bdt-audience"><strong>700</strong><span data-zh="现场观众" data-en="in-person audience">现场观众</span></div>
+                <div class="bdt-responsibilities">
+                  <div><h5 data-zh="商务合作" data-en="Partnerships">商务合作</h5><p data-zh="对接校内门店与影院，洽谈赞助、活动权益及现场露出。" data-en="Coordinated with campus stores and the cinema on sponsorship, partnership benefits and on-site visibility.">对接校内门店与影院，洽谈赞助、活动权益及现场露出。</p></div>
+                  <div><h5 data-zh="资源统筹" data-en="Resource coordination">资源统筹</h5><p data-zh="协调舞台、灯光、导播、主持及服装造型，推进演出准备。" data-en="Aligned stage, lighting, live direction, hosts and styling to advance show preparation.">协调舞台、灯光、导播、主持及服装造型，推进演出准备。</p></div>
+                  <div><h5 data-zh="现场执行" data-en="On-site delivery">现场执行</h5><p data-zh="设计游戏与串场环节，衔接前期宣发、物料落地与现场兑现。" data-en="Designed interactive and linking segments, connecting promotion, material delivery and on-site execution.">设计游戏与串场环节，衔接前期宣发、物料落地与现场兑现。</p></div>
+                </div>
+                <aside class="bdt-source-excerpt" aria-label="活动记录内容摘录" data-aria-zh="活动记录内容摘录" data-aria-en="Excerpt from the event record">
+                  <span data-zh="活动记录 · 内容摘录" data-en="Event record · Content excerpt">活动记录 · 内容摘录</span>
+                  <p><strong>GOLDEN ZONE</strong><time datetime="2026-05-29">2026.05.29</time><em data-zh="中北大学科艺苑" data-en="NUC Keyiyuan">中北大学科艺苑</em></p>
+                  <p data-zh="公开推文记录了校园影院、茶饮门店相关票面权益与现场互动奖品，为合作权益与活动落地提供了可核验的活动背景。" data-en="The public event post records ticket benefits and on-site interaction prizes involving the campus cinema and tea shop, providing verifiable context for partnership benefits and delivery.">公开推文记录了校园影院、茶饮门店相关票面权益与现场互动奖品，为合作权益与活动落地提供了可核验的活动背景。</p>
+                </aside>
+                <div class="bdt-showcase-links">
+                  <a href="https://v.douyin.com/Eic0BhhMD2A/" target="_blank" rel="noopener noreferrer" data-zh="观看专场回顾 ↗" data-en="Watch the showcase recap ↗">观看专场回顾 ↗</a>
+                  <a href="https://mp.weixin.qq.com/s/brZ6hN8MbMV3W84O3eqr-g" target="_blank" rel="noopener noreferrer" data-zh="查看活动记录 ↗" data-en="View the event record ↗">查看活动记录 ↗</a>
+                </div>
+              </div>
+            </section>
+
+            <div class="bdt-duty-grid">
+            <section class="bdt-apparel bdt-duty bdt-duty--apparel" aria-labelledby="bdtApparelTitle">
+              <div class="bdt-apparel-heading">
+                <div><p class="bdt-duty-title" data-zh="社服定制" data-en="Apparel customization">社服定制</p><h4 id="bdtApparelTitle" data-zh="把团队需求，落实到每一件社服。" data-en="Turn team needs into apparel ready to wear.">把团队需求，落实到每一件社服。</h4></div>
+                <p data-zh="负责社服定制全流程，对接款式与印花规格，汇总尺码数量，协调制作与交付。" data-en="Managed the apparel customization workflow by aligning garment and print specifications, consolidating size quantities, and coordinating production and delivery.">负责社服定制全流程，对接款式与印花规格，汇总尺码数量，协调制作与交付。</p>
+              </div>
+
+              <!-- Interaction concept informed by the MIT-licensed Codrops GridToFullPreview demo; implementation is project-native. -->
+              <div class="bdt-apparel-explorer" data-bdt-apparel-explorer>
+                <div class="bdt-apparel-groups" aria-label="社服款式分组" data-aria-zh="社服款式分组" data-aria-en="Team apparel groups">
+                  <button type="button" class="bdt-apparel-group" data-bdt-group="short" data-default-style="black" aria-controls="bdtApparelDetail" aria-expanded="false">
+                    <span class="bdt-apparel-group-media"><img loading="lazy" src="assets/projects/bdt/apparel-short-cover.webp" width="1400" height="1050" alt="社员真实穿着黑白短袖社服"></span>
+                    <span class="bdt-apparel-group-copy"><strong data-zh="短袖组" data-en="T-shirt group">短袖组</strong><span data-zh="黑 · 白｜真实上身与正背面规格" data-en="Black · White | Real wear and front/back specifications">黑 · 白｜真实上身与正背面规格</span><em data-zh="查看设计与上身效果" data-en="View design and real wear">查看设计与上身效果</em></span>
+                  </button>
+                  <button type="button" class="bdt-apparel-group" data-bdt-group="long" data-default-style="red" aria-controls="bdtApparelDetail" aria-expanded="false">
+                    <span class="bdt-apparel-group-media"><img loading="lazy" src="assets/projects/bdt/apparel-long-cover.webp" width="1119" height="839" alt="社员真实穿着蓝色、粉色和红色长袖社服"></span>
+                    <span class="bdt-apparel-group-copy"><strong data-zh="长袖组" data-en="Long-sleeve group">长袖组</strong><span data-zh="红 · 蓝 · 粉｜真实上身与正背面规格" data-en="Red · Blue · Pink | Real wear and front/back specifications">红 · 蓝 · 粉｜真实上身与正背面规格</span><em data-zh="查看设计与上身效果" data-en="View design and real wear">查看设计与上身效果</em></span>
+                  </button>
+                </div>
+
+                <section class="bdt-apparel-detail" id="bdtApparelDetail" data-bdt-apparel-detail aria-hidden="true" inert>
+                  <div class="bdt-apparel-detail-head">
+                    <div><p class="research-block-label" data-bdt-group-kicker>SHORT SLEEVE</p><h5 data-bdt-group-title>短袖组｜黑色</h5></div>
+                    <div class="bdt-apparel-detail-actions">
+                      <div class="bdt-apparel-group-switch" aria-label="切换社服分组" data-aria-zh="切换社服分组" data-aria-en="Switch apparel group">
+                        <button type="button" data-bdt-detail-group="short" aria-pressed="true" data-zh="短袖" data-en="T-shirts">短袖</button>
+                        <button type="button" data-bdt-detail-group="long" aria-pressed="false" data-zh="长袖" data-en="Long sleeves">长袖</button>
+                      </div>
+                      <button type="button" class="bdt-apparel-close" data-bdt-apparel-close aria-label="关闭社服预览" data-aria-zh="关闭社服预览" data-aria-en="Close apparel preview"><span aria-hidden="true">×</span><span data-zh="关闭" data-en="Close">关闭</span></button>
+                    </div>
+                  </div>
+                  <div class="bdt-apparel-compare">
+                    <figure class="bdt-apparel-worn">
+                      <button type="button" data-bdt-zoom="assets/projects/bdt/apparel-black-worn.webp" data-bdt-worn-zoom aria-label="查看黑色短袖真实上身照片" data-aria-zh="查看黑色短袖真实上身照片" data-aria-en="View the black T-shirt in use">
+                        <img loading="lazy" data-bdt-worn-image src="assets/projects/bdt/apparel-black-worn.webp" width="900" height="1598" alt="社员真实穿着黑色短袖社服">
+                      </button>
+                      <figcaption data-bdt-worn-caption>真实上身 · 黑色短袖</figcaption>
+                    </figure>
+                    <figure class="bdt-apparel-spec">
+                      <button type="button" data-bdt-zoom="assets/projects/bdt/apparel-black-tee.png" data-bdt-spec-zoom aria-label="查看黑色短袖完整规格图" data-aria-zh="查看黑色短袖完整规格图" data-aria-en="View the full black T-shirt specification">
+                        <img loading="lazy" data-bdt-spec-image src="assets/projects/bdt/apparel-black-tee.png" width="661" height="351" alt="黑色短袖社服正背面、印花尺寸与尺码数量规格图">
+                      </button>
+                      <figcaption><strong data-bdt-style-title>黑色短袖</strong><span data-zh="制作规格图 · 查看完整尺寸与数量表" data-en="Production specification · View full dimensions and sizing table">制作规格图 · 查看完整尺寸与数量表</span></figcaption>
+                    </figure>
+                  </div>
+                  <div class="bdt-apparel-colors" role="tablist" aria-label="选择社服颜色" data-aria-zh="选择社服颜色" data-aria-en="Choose apparel color">
+                    <button type="button" role="tab" data-bdt-style="black" data-group="short" aria-selected="true" data-title-zh="黑色短袖" data-title-en="Black T-shirt" data-spec-src="assets/projects/bdt/apparel-black-tee.png" data-spec-width="661" data-spec-height="351" data-spec-alt-zh="黑色短袖社服正背面、印花尺寸与尺码数量规格图" data-spec-alt-en="Front, back, print dimensions and sizing specification for the black team T-shirt" data-worn-src="assets/projects/bdt/apparel-black-worn.webp" data-worn-width="900" data-worn-height="1598" data-worn-position="50% 58%" data-worn-position-mobile="50% 60%" data-worn-alt-zh="社员真实穿着黑色短袖社服" data-worn-alt-en="Team member wearing the black team T-shirt"><span aria-hidden="true" class="bdt-swatch bdt-swatch--black"></span><span data-zh="黑色" data-en="Black">黑色</span></button>
+                    <button type="button" role="tab" data-bdt-style="white" data-group="short" aria-selected="false" data-title-zh="白色短袖" data-title-en="White T-shirt" data-spec-src="assets/projects/bdt/apparel-white-tee.png" data-spec-width="663" data-spec-height="340" data-spec-alt-zh="白色短袖社服正背面、印花尺寸与尺码数量规格图" data-spec-alt-en="Front, back, print dimensions and sizing specification for the white team T-shirt" data-worn-src="assets/projects/bdt/apparel-white-worn.webp" data-worn-width="884" data-worn-height="1600" data-worn-position="50% 78%" data-worn-position-mobile="50% 78%" data-worn-alt-zh="社员真实穿着白色短袖社服" data-worn-alt-en="Team member wearing the white team T-shirt"><span aria-hidden="true" class="bdt-swatch bdt-swatch--white"></span><span data-zh="白色" data-en="White">白色</span></button>
+                    <button type="button" role="tab" data-bdt-style="red" data-group="long" aria-selected="false" hidden data-title-zh="红色长袖" data-title-en="Red long sleeve" data-spec-src="assets/projects/bdt/apparel-red-long-sleeve.png" data-spec-width="636" data-spec-height="322" data-spec-alt-zh="红色长袖社服正背面与尺码数量规格图" data-spec-alt-en="Front, back and sizing specification for the red long-sleeve team apparel" data-worn-src="assets/projects/bdt/apparel-long-worn.webp" data-worn-width="960" data-worn-height="1280" data-worn-position="50% 61%" data-worn-position-mobile="50% 61%" data-worn-alt-zh="社员真实穿着红色、蓝色与粉色长袖社服" data-worn-alt-en="Team members wearing red, blue and pink long-sleeve apparel"><span aria-hidden="true" class="bdt-swatch bdt-swatch--red"></span><span data-zh="红色" data-en="Red">红色</span></button>
+                    <button type="button" role="tab" data-bdt-style="blue" data-group="long" aria-selected="false" hidden data-title-zh="蓝色长袖" data-title-en="Blue long sleeve" data-spec-src="assets/projects/bdt/apparel-blue-long-sleeve.png" data-spec-width="621" data-spec-height="317" data-spec-alt-zh="蓝色长袖社服正背面与尺码数量规格图" data-spec-alt-en="Front, back and sizing specification for the blue long-sleeve team apparel" data-worn-src="assets/projects/bdt/apparel-long-worn.webp" data-worn-width="960" data-worn-height="1280" data-worn-position="50% 61%" data-worn-position-mobile="50% 61%" data-worn-alt-zh="社员真实穿着红色、蓝色与粉色长袖社服" data-worn-alt-en="Team members wearing red, blue and pink long-sleeve apparel"><span aria-hidden="true" class="bdt-swatch bdt-swatch--blue"></span><span data-zh="蓝色" data-en="Blue">蓝色</span></button>
+                    <button type="button" role="tab" data-bdt-style="pink" data-group="long" aria-selected="false" hidden data-title-zh="粉色长袖" data-title-en="Pink long sleeve" data-spec-src="assets/projects/bdt/apparel-pink-long-sleeve.png" data-spec-width="633" data-spec-height="334" data-spec-alt-zh="粉色长袖社服正背面与尺码数量规格图" data-spec-alt-en="Front, back and sizing specification for the pink long-sleeve team apparel" data-worn-src="assets/projects/bdt/apparel-long-worn.webp" data-worn-width="960" data-worn-height="1280" data-worn-position="50% 61%" data-worn-position-mobile="50% 61%" data-worn-alt-zh="社员真实穿着红色、蓝色与粉色长袖社服" data-worn-alt-en="Team members wearing red, blue and pink long-sleeve apparel"><span aria-hidden="true" class="bdt-swatch bdt-swatch--pink"></span><span data-zh="粉色" data-en="Pink">粉色</span></button>
+                  </div>
+                </section>
+              </div>
+            </section>
+
+            <figure class="bdt-team-poster">
+              <button type="button" data-bdt-zoom="assets/projects/bdt/bdt-team-members-poster.jpg" aria-label="查看舞社招新与团队成员介绍完整海报" data-aria-zh="查看舞社招新与团队成员介绍完整海报" data-aria-en="View the full B.D.T recruitment and team introduction poster">
+                <img loading="lazy" src="assets/projects/bdt/bdt-team-members-poster.jpg" width="1080" height="1920" alt="半导体街舞社招新与团队成员介绍海报，其中标注副社长曹若雯" data-alt-zh="半导体街舞社招新与团队成员介绍海报，其中标注副社长曹若雯" data-alt-en="B.D.T recruitment and team introduction poster identifying Cao Ruowen as vice president">
+              </button>
+              <figcaption data-zh="舞社招新 · 团队成员介绍" data-en="Recruitment · Team introduction">舞社招新 · 团队成员介绍</figcaption>
+            </figure>
+
+            <div class="bdt-compact-duties">
+              <section class="bdt-duty bdt-duty--compact bdt-duty--schedule" aria-labelledby="bdtScheduleTitle">
+                <h4 class="bdt-duty-title" id="bdtScheduleTitle" data-zh="演出调度" data-en="Performance scheduling">演出调度</h4>
+                <p data-zh="对接校级、院级及社区演出，确认时长、场地与节目需求，协调人员和节目安排。" data-en="Coordinated campus, school-level and community performances by confirming timing, venue and program needs, then aligning people and sets.">对接校级、院级及社区演出，确认时长、场地与节目需求，协调人员和节目安排。</p>
+              </section>
+
+              <section class="bdt-duty bdt-duty--compact bdt-duty--training" aria-labelledby="bdtTrainingTitle">
+                <h4 class="bdt-duty-title" id="bdtTrainingTitle" data-zh="训练保障" data-en="Training support">训练保障</h4>
+                <p data-zh="预约训练教室，协调场地使用，支持社员日常排练。" data-en="Booked training rooms, coordinated venue use and supported regular rehearsals.">预约训练教室，协调场地使用，支持社员日常排练。</p>
+              </section>
+            </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <h2 class="section-title" data-zh="经历" data-en="Experience">经历</h2>
+        <div class="exp-cards">
+          <details class="exp-card"><summary><span class="exp-card-tag" data-zh="内容推广 · 达人建联" data-en="Content promotion · Creator outreach">内容推广 · 达人建联</span><h3 data-zh="品牌推广与协作" data-en="Brand promotion and collaboration">品牌推广与协作</h3><p data-zh="两类经历按具体合作分别呈现，不默认每个品牌都同时包含两类工作。" data-en="Two types of experience are described by individual engagement; not every brand is assumed to include both.">两类经历按具体合作分别呈现，不默认每个品牌都同时包含两类工作。</p></summary><div class="exp-detail"><p data-zh="内容推广：根据具体合作要求参与内容理解、策划与发布。" data-en="Content promotion: interpreted briefs and supported planning and publishing for relevant engagements.">内容推广：根据具体合作要求参与内容理解、策划与发布。</p><p data-zh="图拉斯相关合作：参与 PR 对接、创作者建联与投稿记录维护，推进合作沟通。" data-en="Torras-related engagement: supported PR communication, creator outreach and submission tracking.">图拉斯相关合作：参与 PR 对接、创作者建联与投稿记录维护，推进合作沟通。</p><div class="evidence-gallery" data-aria-zh="已脱敏的图拉斯 PR 对接记录" data-aria-en="Privacy-redacted Torras PR coordination records" aria-label="已脱敏的图拉斯 PR 对接记录"><a class="evidence-image" href="assets/projects/experience/torras-pr-log-01-redacted.png" data-evidence-image><img src="assets/projects/experience/torras-pr-log-01-redacted.png" loading="lazy" alt="图拉斯 PR 投稿记录，创作者身份与链接已脱敏" data-alt-zh="图拉斯 PR 投稿记录，创作者身份与链接已脱敏" data-alt-en="Torras PR submission log with creator identities and links redacted"><span data-zh="投稿记录节选 · 保留联系人和内容脉络，创作者身份、链接与水印已脱敏" data-en="Submission log excerpt · contacts and context retained; creator identities, links and watermarks redacted">投稿记录节选 · 保留联系人和内容脉络，创作者身份、链接与水印已脱敏</span></a><a class="evidence-image" href="assets/projects/experience/torras-pr-log-02-redacted.png" data-evidence-image><img src="assets/projects/experience/torras-pr-log-02-redacted.png" loading="lazy" alt="图拉斯 PR 对接记录续页，创作者身份与链接已脱敏" data-alt-zh="图拉斯 PR 对接记录续页，创作者身份与链接已脱敏" data-alt-en="Continuation of Torras PR log with creator identities and links redacted"><span data-zh="记录续页 · 保留联系人、平台与投稿状态，创作者身份和链接已脱敏" data-en="Continuation · contacts, platforms and submission status retained; creator identities and links redacted">记录续页 · 保留联系人、平台与投稿状态，创作者身份和链接已脱敏</span></a></div></div></details>
+          <details class="exp-card"><summary><span class="exp-card-tag" data-zh="组织协作 · 校园实践" data-en="Organization · Campus practice">组织协作 · 校园实践</span><h3 data-zh="学生组织经历" data-en="Student organization experience">学生组织经历</h3><p data-zh="承担班级、学生组织与社团中的沟通、协调和活动执行职责。" data-en="Handled communication, coordination and event execution across class, student organization and club roles.">承担班级、学生组织与社团中的沟通、协调和活动执行职责。</p></summary><div class="exp-detail"><p data-zh="相关荣誉和大型活动成果均属于团队共同成果；个人职责以组织沟通、任务协调和现场执行为主。" data-en="Related honors and large-event outcomes were team achievements; my role centered on communication, task coordination and on-site execution.">相关荣誉和大型活动成果均属于团队共同成果；个人职责以组织沟通、任务协调和现场执行为主。</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="capabilities">
+      <div class="container">
+        <h2 class="section-title" data-zh="能力与方法" data-en="Skills & approach">能力与方法</h2>
+        <div class="cap-grid">
+          <div class="cap-card"><span class="cap-number">01</span><h3 data-zh="产品思考" data-en="Product thinking">产品思考</h3><p data-zh="需求识别、场景拆解、功能优先级与交互反馈。" data-en="Need identification, scenario mapping, feature prioritization and interaction feedback.">需求识别、场景拆解、功能优先级与交互反馈。</p></div>
+          <div class="cap-card"><span class="cap-number">02</span><h3 data-zh="运营执行" data-en="Operations execution">运营执行</h3><p data-zh="业务流程、用户沟通、内容推广与线下协作。" data-en="Business flows, user communication, content promotion and offline coordination.">业务流程、用户沟通、内容推广与线下协作。</p></div>
+          <div class="cap-card"><span class="cap-number">03</span><h3 data-zh="项目协作" data-en="Project coordination">项目协作</h3><p data-zh="任务拆解、节点推进、资源协调与交付复盘。" data-en="Task breakdown, milestone tracking, resource coordination and delivery review.">任务拆解、节点推进、资源协调与交付复盘。</p></div>
+          <div class="cap-card"><span class="cap-number">04</span><h3 data-zh="AI 工具协作" data-en="AI-assisted work">AI 工具协作</h3><p data-zh="使用 ChatGPT/Codex 辅助需求澄清、原型实现和迭代验证。" data-en="Using ChatGPT/Codex to assist requirement clarification, prototype implementation and iterative validation.">使用 ChatGPT/Codex 辅助需求澄清、原型实现和迭代验证。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section honors-section" id="honors">
+      <div class="container">
+        <div class="honors-module" data-honors-module>
+          <div class="honors-heading">
+            <div>
+              <span class="eyebrow" data-zh="真实记录与证明" data-en="Verified records and evidence">真实记录与证明</span>
+              <h2 class="section-title" data-zh="荣誉与认可" data-en="Honors & recognition">荣誉与认可</h2>
+            </div>
+            <button class="honors-toggle" type="button" data-honors-toggle aria-expanded="false" aria-controls="honorsCurtain">
+              <span data-honors-toggle-text data-zh="悬停了解 · 移开收起" data-en="Hover to explore · leave to close">悬停了解 · 移开收起</span>
+              <span aria-hidden="true" class="honors-toggle-arrow">↓</span>
+            </button>
+          </div>
+          <div class="honors-stage" data-honors-stage>
+            <div class="honors-base" data-honors-base>
+              <div class="honors-groups" data-honors-list></div>
+            </div>
+            <aside class="honors-curtain" id="honorsCurtain" data-honors-curtain aria-hidden="true">
+              <div class="honors-curtain-inner">
+                <div class="honors-manifesto-main" aria-label="我喜欢把事情做成。也想看看，自己还能做到哪里。">
+                  <span data-zh="我喜欢把事情做成。" data-en="I like seeing things through.">我喜欢把事情做成。</span>
+                  <span data-zh="也想看看，" data-en="And I want to see">也想看看，</span>
+                  <span data-zh="自己还能做到哪里。" data-en="how far I can take myself.">自己还能做到哪里。</span>
+                </div>
+                <div class="honors-manifesto-copy">
+                  <p data-honors-rich data-zh="在反复求证中，练就严谨。<br>在具体行动中，磨出韧劲。<br>在并肩协作中，凝聚合力。<br>在主动表达中，建立连接。" data-en="Through repeated validation, I develop rigor.<br>Through concrete action, I build resilience.<br>Through close collaboration, I create momentum.<br>Through active expression, I build connection.">在反复求证中，练就严谨。<br>在具体行动中，磨出韧劲。<br>在并肩协作中，凝聚合力。<br>在主动表达中，建立连接。</p>
+                  <p data-honors-rich data-zh="这些经历留下了证书，<br>也留下了我做事的方式。<br>我想带着它们，去解决新的问题。" data-en="These experiences left certificates,<br>and the way I work.<br>I want to bring both to new problems.">这些经历留下了证书，<br>也留下了我做事的方式。<br>我想带着它们，去解决新的问题。</p>
+                  <button class="honors-curtain-close" type="button" data-honors-close><span data-zh="收起" data-en="Close">收起</span> ↑</button>
+                </div>
+              </div>
+              <svg class="honors-curtain-arc" viewBox="0 0 420 56" aria-hidden="true" focusable="false">
+                <path d="M4 41C102 10 241 14 403 39" pathLength="1"></path>
+                <circle cx="403" cy="39" r="2.5"></circle>
+              </svg>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container contact-content">
+        <h2 class="section-title" data-zh="联系我" data-en="Contact">联系我</h2>
+        <p class="contact-lead" data-zh="如有产品、运营、项目协作或实习机会，欢迎联系。" data-en="Feel free to reach out about product, operations, project collaboration or internship opportunities.">如有产品、运营、项目协作或实习机会，欢迎联系。</p>
+        <div class="contact-methods">
+          <a class="contact-item" data-config-contact="email" hidden><span data-zh="邮箱" data-en="Email">邮箱</span><strong data-config-value></strong></a>
+          <a class="contact-item" data-config-contact="phone" hidden><span data-zh="电话" data-en="Phone">电话</span><strong data-config-value></strong></a>
+          <button class="contact-item" type="button" data-config-contact="wechat" hidden><span data-zh="微信" data-en="WeChat">微信</span><strong data-zh="查看二维码" data-en="View QR code">查看二维码</strong></button>
+        </div>
+        <div class="resume-panel" id="resumes" data-resume-panel hidden>
+          <div class="resume-heading"><div><span class="eyebrow" data-zh="针对不同岗位方向" data-en="Tailored for different roles">针对不同岗位方向</span><h3 data-zh="选择简历版本" data-en="Choose a résumé">选择简历版本</h3></div><p data-zh="三份简历均为单页 PDF，可直接查看或下载。" data-en="Each résumé is a one-page PDF ready to view or download.">三份简历均为单页 PDF，可直接查看或下载。</p></div>
+          <div class="resume-grid" data-resume-grid></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><span class="footer-brand">WEN<span class="brand-dot">.</span></span><p data-zh="曹若雯 · 中北大学 · 2027届" data-en="Cao Ruowen · North University of China · Class of 2027">曹若雯 · 中北大学 · 2027届</p><span class="editorial-hand-note footer-note" aria-hidden="true">Keep Making</span><p class="footer-copy">&copy; 2026</p></div></footer>
+
+  <dialog class="lightbox" id="lightbox"><button type="button" class="lightbox-close" data-lightbox-close aria-label="关闭大图" data-aria-zh="关闭大图" data-aria-en="Close image">×</button><img alt=""><p></p></dialog>
+  <dialog class="qr-dialog" id="qrDialog"><button type="button" class="lightbox-close" data-qr-close aria-label="关闭二维码" data-aria-zh="关闭二维码" data-aria-en="Close QR code">×</button><h2 data-zh="微信二维码" data-en="WeChat QR code">微信二维码</h2><img alt="微信二维码" data-alt-zh="微信二维码" data-alt-en="WeChat QR code"></dialog>
+  <dialog class="honor-viewer" id="honorViewer" aria-labelledby="honorViewerTitle">
+    <div class="honor-viewer-toolbar"><p id="honorViewerTitle"></p><div><button type="button" data-honor-zoom-out aria-label="缩小" data-aria-zh="缩小" data-aria-en="Zoom out">−</button><button type="button" data-honor-zoom-in aria-label="放大" data-aria-zh="放大" data-aria-en="Zoom in">+</button><button type="button" class="lightbox-close" data-honor-viewer-close aria-label="关闭证明" data-aria-zh="关闭证明" data-aria-en="Close evidence">×</button></div></div>
+    <div class="honor-viewer-media"><img alt="" data-honor-viewer-image></div>
+    <div class="honor-viewer-footer"><button type="button" data-honor-prev hidden data-zh="上一份" data-en="Previous">上一份</button><p data-honor-viewer-count></p><button type="button" data-honor-next hidden data-zh="下一份" data-en="Next">下一份</button></div>
+  </dialog>
+  <script src="honors-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

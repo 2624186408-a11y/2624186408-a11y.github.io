@@ -1,0 +1,10 @@
+{
+  "name": "wen-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WEN. personal portfolio",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}
+
